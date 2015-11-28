@@ -1,4 +1,4 @@
-package com.shekhargulati.ninety_nine_problems.lists;
+package com.shekhargulati.ninetynine_problems.java8.lists;
 
 import java.util.Collections;
 import java.util.LinkedList;
