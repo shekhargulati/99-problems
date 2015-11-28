@@ -22,7 +22,7 @@ From the original source:
 
 Lists are recursive type in Haskell.
 
-[Problem 01 (*) Find the last element of a list]()
+[Problem 01 (*) Find the last element of a list](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P01.hs)
 
 ```haskell
 Prelude> last1 ["a","b","c","d"]
