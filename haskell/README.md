@@ -17,3 +17,16 @@ From the original source:
 * [Multiway Trees](#multiway-trees)
 * [Graphs](#graphs)
 * [Miscellaneous](#miscellaneous)
+
+## Lists
+
+Lists are recursive type in Haskell.
+
+[Problem 01 (*) Find the last element of a list]()
+
+```haskell
+Prelude> last1 ["a","b","c","d"]
+
+```
+
+We are using `last1` because Haskell already has `last` function.
