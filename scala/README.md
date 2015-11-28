@@ -21,16 +21,17 @@ From the original source:
 
 ## Lists
 
-## Lists
-
 In Scala, default List[T] is an immutable LinkedList with O(1) head access and O(n) access to interior elements. You can create a list of names like `val names = List("shekhar","rahul","sameer")`.
+
 **TODO: Add more later**
 
-### [Problem 01 (*) Find the last element of a list]()
+### [Problem 01 (*) Find the last element of a list](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P01.scala)
+
+We are using scalatest library for test cases.
 
 ```scala
-def main(args: Array[String]) {
-  val alphabet = lastRecursion(List("a", "b", "c", "d"))
-  assert(alphabet == "d", "last alphabet should be 'd'")
+it("should find last element") {
+  val last = P01.last(List("a", "b", "c", "d"))
+  last should be("d")
 }
 ```

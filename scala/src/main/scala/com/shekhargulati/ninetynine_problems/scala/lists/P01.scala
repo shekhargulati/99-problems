@@ -4,12 +4,6 @@ import java.util.NoSuchElementException
 
 object P01 {
 
-  def main(args: Array[String]) {
-    val alphabet = lastRecursion(List("a", "b", "c", "d"))
-    assert(alphabet == "d", "last alphabet should be 'd'")
-
-  }
-
   /*
   Using the built in last function of a list
    */
