@@ -12,19 +12,19 @@ import static org.junit.Assert.assertThat;
 public class P01Test {
 
     @Test
-    public void shouldFindLastElementFromAListOfNumbers() throws Exception {
-        assertThat(P01.last(asList(1, 1, 2, 3, 5, 8)), is(equalTo(8)));
+    public void shouldFindLastElementFromAListOfAlphabets() throws Exception {
+        assertThat(P01.last(asList("a", "b", "c", "d")), is(equalTo("d")));
     }
 
     @Test
-    public void shouldFindLastElementFromALinkedListOfNumbers() throws Exception {
-        LinkedList<Integer> numbers = P01.linkedList(1, 1, 2, 3, 5, 8);
-        assertThat(P01.last(numbers), is(equalTo(8)));
+    public void shouldFindLastElementFromALinkedListOfAlphabets() throws Exception {
+        LinkedList<String> alphabets = P01.linkedList("a", "b", "c", "d");
+        assertThat(P01.last(alphabets), is(equalTo("d")));
     }
 
     @Test
-    public void shouldFindLastElementFromAListOfNumbersUsingRecursion() throws Exception {
-        assertThat(P01.lastRecursive(asList(1, 1, 2, 3, 5, 8)), is(equalTo(8)));
+    public void shouldFindLastElementFromAListOfAlphabetsUsingRecursion() throws Exception {
+        assertThat(P01.lastRecursive(asList("a", "b", "c", "d")), is(equalTo("d")));
     }
 
 

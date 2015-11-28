@@ -38,13 +38,13 @@ public static <T> List<T> tail(LinkedList<T> elements) {
 
 > Java 8 does not support pattern matching so you have to use if-else in your code.
 
-### [Problem 01 (*) Find the last element of a list](https://github.com/shekhargulati/99-java8-problems/blob/master/src/main/java/com/shekhargulati/ninety_nine_problems/lists/P01.java)
+### [Problem 01 (*) Find the last element of a list](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P01.java)
 
 ```java
 @Test
-public void shouldFindLastElementFromAListOfNumbers() throws Exception {
-    assertThat(last(asList(1, 1, 2, 3, 5, 8)), is(equalTo(8)));
+public void shouldFindLastElementFromAListOfAlphabets() throws Exception {
+    assertThat(P01.last(asList("a", "b", "c", "d")), is(equalTo("d")));
 }
 ```
 
-All JUnit test cases related to this problem are [here](https://github.com/shekhargulati/99-java8-problems/blob/master/src/test/java/com/shekhargulati/ninety_nine_problems/lists/P01Test.java).
+All JUnit test cases related to this problem are [here](https://github.com/shekhargulati/99-problems/blob/master/java8/src/test/java/com/shekhargulati/ninetynine_problems/java8/lists/P01Test.java).

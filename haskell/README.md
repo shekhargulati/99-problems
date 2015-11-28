@@ -17,5 +17,3 @@ From the original source:
 * [Multiway Trees](#multiway-trees)
 * [Graphs](#graphs)
 * [Miscellaneous](#miscellaneous)
-
-## Lists
