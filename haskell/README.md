@@ -51,3 +51,10 @@ When list has one element
 Prelude> secondLast [1]
 *** Exception: Can't find secondLast element from a list with less than 2 elements
 ```
+
+### [P03 (*) Find the K'th element of a list](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P03.hs)
+
+```haskell
+Prelude> kth [1,2,3,4,5] 3
+4
+```
