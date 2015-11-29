@@ -38,7 +38,7 @@ public static <T> List<T> tail(LinkedList<T> elements) {
 
 > Java 8 does not support pattern matching so you have to use if-else in your code.
 
-### [P01 (*) Find the last element of a list](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P01.java)
+### [P01](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P01.java) **(*) Find the last element of a list**
 
 ```java
 @Test
@@ -47,7 +47,7 @@ public void shouldFindLastElementFromAListOfAlphabets() throws Exception {
 }
 ```
 
-### [P02 (*) Find the last but one element of a list](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P02.java)
+### [P02](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P02.java) **(*) Find the last but one element of a list**
 
 ```java
 @Test
@@ -71,7 +71,7 @@ public void shouldThrowExceptionWhenListHasSingleElement() throws Exception {
 }
 ```
 
-### [P03 (*) Find the Kth element of a list](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P03.java)
+### [P03](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P03.java) **(*) Find the Kth element of a list**
 
 The first element of a list has index 0. In the example shown below, last element would be at kth position 4.
 
@@ -80,5 +80,20 @@ The first element of a list has index 0. In the example shown below, last elemen
 public void shouldFindKthElementFromAList() throws Exception {
     List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
     assertThat(P03.kth(numbers, 2), is(equalTo(3)));
+}
+```
+
+### [P04](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P04.java) **(*) Find the number of elements of a list**
+
+```java
+@Test
+public void listOfEmptyListShouldBe0() throws Exception {
+    int length = P04.length(Collections.emptyList());
+    assertThat(length, is(equalTo(0)));
+}
+
+@Test
+public void shouldFindListOfNonEmptyList() throws Exception {
+    assertThat(P04.length(Arrays.asList(1, 2, 3, 4, 5)), is(equalTo(5)));
 }
 ```
