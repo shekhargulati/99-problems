@@ -15,6 +15,10 @@ public class P04 {
         return list.stream().count();
     }
 
+    public static <T> long lengthStream1(List<T> list) {
+        return list.stream().mapToInt(x -> 1).sum();
+    }
+
     public static <T> int lengthRecursive(List<T> list) {
         return _lengthRecursive(list, 0);
     }

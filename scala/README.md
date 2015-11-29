@@ -25,9 +25,9 @@ In Scala, default List[T] is an immutable LinkedList with O(1) head access and O
 
 **TODO: Add more later**
 
-### [P01 (*) Find the last element of a list](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P01.scala)
+> We are using scalatest library for test cases.
 
-We are using scalatest library for test cases.
+### [P01](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P01.scala) **(*) Find the last element of a list**
 
 ```scala
 it("should find last element") {
@@ -36,7 +36,7 @@ it("should find last element") {
 }
 ```
 
-### [P02 (*) Find the last but one element of a list.](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P02.scala)
+### [P02](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P02.scala) **(*) Find the last but one element of a list**
 
 ```scala
 it("should give second last element when list has more than two elements") {
@@ -59,7 +59,7 @@ it("should throw exception when list has one element") {
 }
 ```
 
-### [P03 (*) Find the Kth element of a list](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P03.scala)
+### [P03](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P03.scala) **(*) Find the Kth element of a list**
 
 The first element of a list has index 0. In the example shown below, last element would be at kth position 4.
 
@@ -74,5 +74,17 @@ it("should be last element when k is equal to size of list minus one") {
 
 it("should be (k+1)th element") {
   P03.kth(List(1, 2, 3, 4, 5), 2) should be(3)
+}
+```
+
+### [P04](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P04.scala) **(*) Find the number of elements of a list**
+
+```scala
+it("should be zero when list is empty") {
+  P04.length(List()) should be(0)
+}
+
+it("should be 5 when list has five elements") {
+  P04.length(List(1, 2, 3, 4, 5)) should be(5)
 }
 ```
