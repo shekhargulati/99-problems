@@ -47,7 +47,7 @@ public void shouldFindLastElementFromAListOfAlphabets() throws Exception {
 }
 ```
 
-### [P02 (*) Find the last but one element of a list.](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P02.java)
+### [P02 (*) Find the last but one element of a list](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P02.java)
 
 ```java
 @Test
@@ -68,5 +68,15 @@ public void shouldThrowExceptionWhenListEmpty() throws Exception {
 @Test(expected = IllegalArgumentException.class)
 public void shouldThrowExceptionWhenListHasSingleElement() throws Exception {
     P02.secondLast(Arrays.asList(1));
+}
+```
+
+### [P03 (*) Find the Kth element of a list](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P03.java)
+
+```java
+@Test
+public void shouldFindKthElementFromAList() throws Exception {
+    List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+    assertThat(P03.kth(numbers, 2), is(equalTo(3)));
 }
 ```

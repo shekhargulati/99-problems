@@ -2,10 +2,7 @@ package com.shekhargulati.ninetynine_problems.java8.lists;
 
 import org.junit.Test;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 import static com.shekhargulati.ninetynine_problems.java8.lists.LinkedListUtils.linkedList;
 import static java.util.Arrays.asList;
@@ -21,12 +18,12 @@ public class P02Test {
         assertThat(P02.secondLast(numbers), is(equalTo(10)));
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test(expected = NoSuchElementException.class)
     public void shouldThrowExceptionWhenListEmpty() throws Exception {
         P02.secondLast(Collections.emptyList());
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test(expected = NoSuchElementException.class)
     public void shouldThrowExceptionWhenListHasSingleElement() throws Exception {
         P02.secondLast(Arrays.asList(1));
     }
