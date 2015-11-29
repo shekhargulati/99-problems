@@ -62,8 +62,15 @@ Prelude> kth [1,2,3,4,5] 3
 ### [P04](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P04.hs) **(*) Find the number of elements of a list**
 
 ```haskell
-length' [1..5]
+Prelude> length' [1..5]
 5
 ```
 
 `length'` is a valid function name in Haskell.
+
+### [P05](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P05.hs) **(*) Reverse a list**
+
+```haskell
+Prelude> reverse' [1..5]
+[5,4,3,2,1]
+```
