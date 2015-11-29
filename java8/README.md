@@ -65,13 +65,15 @@ public void shouldThrowExceptionWhenListEmpty() throws Exception {
     P02.secondLast(Collections.emptyList());
 }
 
-@Test(expected = IllegalArgumentException.class)
+@Test(expected = NoSuchElementException.class)
 public void shouldThrowExceptionWhenListHasSingleElement() throws Exception {
     P02.secondLast(Arrays.asList(1));
 }
 ```
 
 ### [P03 (*) Find the Kth element of a list](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P03.java)
+
+The first element of a list has index 0. In the example shown below, last element would be at kth position 4.
 
 ```java
 @Test
