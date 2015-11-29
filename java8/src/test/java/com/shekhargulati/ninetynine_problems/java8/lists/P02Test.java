@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.util.*;
 
-import static com.shekhargulati.ninetynine_problems.java8.lists.LinkedListUtils.linkedList;
+import static com.shekhargulati.ninetynine_problems.java8.lists.CollectionUtils.linkedList;
 import static java.util.Arrays.asList;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;

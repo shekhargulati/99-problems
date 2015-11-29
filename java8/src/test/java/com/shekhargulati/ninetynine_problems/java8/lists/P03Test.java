@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-import static com.shekhargulati.ninetynine_problems.java8.lists.LinkedListUtils.linkedList;
+import static com.shekhargulati.ninetynine_problems.java8.lists.CollectionUtils.linkedList;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;

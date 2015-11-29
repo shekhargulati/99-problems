@@ -97,3 +97,13 @@ public void shouldFindListOfNonEmptyList() throws Exception {
     assertThat(P04.length(Arrays.asList(1, 2, 3, 4, 5)), is(equalTo(5)));
 }
 ```
+
+### [P05](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P05.java) **(*) Reverse a list**
+
+```java
+@Test
+public void shouldReverseAList() throws Exception {
+    List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+    assertThat(P05.reverse(numbers), is(equalTo(Arrays.asList(5, 4, 3, 2, 1))));
+}
+```
