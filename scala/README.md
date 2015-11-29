@@ -25,7 +25,7 @@ In Scala, default List[T] is an immutable LinkedList with O(1) head access and O
 
 **TODO: Add more later**
 
-### [Problem 01 (*) Find the last element of a list](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P01.scala)
+### [P01 (*) Find the last element of a list](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P01.scala)
 
 We are using scalatest library for test cases.
 
@@ -33,5 +33,28 @@ We are using scalatest library for test cases.
 it("should find last element") {
   val last = P01.last(List("a", "b", "c", "d"))
   last should be("d")
+}
+```
+
+### [P02 (*) Find the last but one element of a list.](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P02.scala)
+
+```scala
+it("should give second last element when list has more than two elements") {
+  val numbers = List(1, 2, 11, 4, 5, 8, 10, 6)
+  P02.secondLast(numbers) should be(10)
+}
+```
+
+The method should throw exception when list is empty or has single element.
+
+```scala
+it("should throw exception when list is empty") {
+  val thrown = the[NoSuchElementException] thrownBy P02.secondLast(List())
+  thrown.getMessage should equal("Can't find secondLast element from a list with less than 2 elements")
+}
+
+it("should throw exception when list has one element") {
+  val thrown = the[NoSuchElementException] thrownBy P02.secondLast(List(1))
+  thrown.getMessage should equal("Can't find secondLast element from a list with less than 2 elements")
 }
 ```

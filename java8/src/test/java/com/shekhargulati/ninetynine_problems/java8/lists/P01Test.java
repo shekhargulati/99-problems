@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.util.LinkedList;
 
+import static com.shekhargulati.ninetynine_problems.java8.lists.LinkedListUtils.linkedList;
 import static java.util.Arrays.asList;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
@@ -18,7 +19,7 @@ public class P01Test {
 
     @Test
     public void shouldFindLastElementFromALinkedListOfAlphabets() throws Exception {
-        LinkedList<String> alphabets = P01.linkedList("a", "b", "c", "d");
+        LinkedList<String> alphabets = linkedList("a", "b", "c", "d");
         assertThat(P01.last(alphabets), is(equalTo("d")));
     }
 

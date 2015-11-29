@@ -38,7 +38,7 @@ public static <T> List<T> tail(LinkedList<T> elements) {
 
 > Java 8 does not support pattern matching so you have to use if-else in your code.
 
-### [Problem 01 (*) Find the last element of a list](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P01.java)
+### [P01 (*) Find the last element of a list](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P01.java)
 
 ```java
 @Test
@@ -47,4 +47,26 @@ public void shouldFindLastElementFromAListOfAlphabets() throws Exception {
 }
 ```
 
-All JUnit test cases related to this problem are [here](https://github.com/shekhargulati/99-problems/blob/master/java8/src/test/java/com/shekhargulati/ninetynine_problems/java8/lists/P01Test.java).
+### [P02 (*) Find the last but one element of a list.](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P02.java)
+
+```java
+@Test
+public void shouldFindSecondLastElementFromAList() throws Exception {
+    List<Integer> numbers = asList(1, 2, 11, 4, 5, 8, 10, 6);
+    assertThat(P02.secondLast(numbers), is(equalTo(10)));
+}
+```
+
+The method should throw `NoSuchElementException` when list is either empty or has one element.
+
+```java
+@Test(expected = IllegalArgumentException.class)
+public void shouldThrowExceptionWhenListEmpty() throws Exception {
+    P02.secondLast(Collections.emptyList());
+}
+
+@Test(expected = IllegalArgumentException.class)
+public void shouldThrowExceptionWhenListHasSingleElement() throws Exception {
+    P02.secondLast(Arrays.asList(1));
+}
+```

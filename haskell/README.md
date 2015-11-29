@@ -22,11 +22,32 @@ From the original source:
 
 Lists are recursive type in Haskell.
 
-[Problem 01 (*) Find the last element of a list](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P01.hs)
+### [P01 (*) Find the last element of a list](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P01.hs)
 
 ```haskell
 Prelude> last1 ["a","b","c","d"]
-
+"d"
 ```
 
 We are using `last1` because Haskell already has `last` function.
+
+### [P02 (*) Find the last but one element of a list.](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P02.hs)
+
+```haskell
+Prelude> secondLast [1, 2, 11, 4, 5, 8, 10, 6]
+10
+```
+
+When list is empty you should get exception as shown below.
+
+```haskell
+Prelude> secondLast []
+*** Exception: Can't find secondLast element from a list with less than 2 elements
+```
+
+When list has one element
+
+```haskell
+Prelude> secondLast [1]
+*** Exception: Can't find secondLast element from a list with less than 2 elements
+```

@@ -1,6 +1,5 @@
 package com.shekhargulati.ninetynine_problems.java8.lists;
 
-import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -48,17 +47,4 @@ public class P01 {
     }
 
 
-    public static <T> LinkedList<T> linkedList(T... elements) {
-        return Stream.of(elements).collect(toCollection(LinkedList::new));
-    }
-
-    public static <T> List<T> tail(LinkedList<T> elements) {
-        if (elements == null || elements.isEmpty()) {
-            throw new NoSuchElementException();
-        }
-        if (elements.size() == 1) {
-            return Collections.emptyList();
-        }
-        return elements.subList(1, elements.size());
-    }
 }
