@@ -58,3 +58,21 @@ it("should throw exception when list has one element") {
   thrown.getMessage should equal("Can't find secondLast element from a list with less than 2 elements")
 }
 ```
+
+### [P03 (*) Find the Kth element of a list](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P03.scala)
+
+The first element of a list has index 0. In the example shown below, last element would be at kth position 4.
+
+```scala
+it("should be first element when k is 0") {
+  P03.kth(List(1, 2, 3, 4, 5), 0) should be(1)
+}
+
+it("should be last element when k is equal to size of list minus one") {
+  P03.kth(List(1, 2, 3, 4, 5), 4) should be(5)
+}
+
+it("should be (k+1)th element") {
+  P03.kth(List(1, 2, 3, 4, 5), 2) should be(3)
+}
+```
