@@ -74,3 +74,12 @@ Prelude> length' [1..5]
 Prelude> reverse' [1..5]
 [5,4,3,2,1]
 ```
+### [P06](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P06.hs) **(*) Find out whether a list is a palindrome**
+
+```haskell
+Prelude> isPalindrome ["x","a","m","a","x"]
+True
+
+Prelude> isPalindrome [1,2,3,4,5]
+False
+```
