@@ -108,8 +108,7 @@ public void shouldReverseAList() throws Exception {
 }
 ```
 
-###
-[P06](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P06.java) **(*) Find out whether a list is a palindrome**
+### [P06](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P06.java) **(*) Find out whether a list is a palindrome**
 
 ```java
 @Test
