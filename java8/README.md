@@ -107,3 +107,18 @@ public void shouldReverseAList() throws Exception {
     assertThat(P05.reverse(numbers), is(equalTo(Arrays.asList(5, 4, 3, 2, 1))));
 }
 ```
+
+###
+[P06](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P06.java) **(*) Find out whether a list is a palindrome**
+
+```java
+@Test
+public void shouldReturnTrueWhenListIsPalindrome() throws Exception {
+    assertTrue(isPalindrome(Arrays.asList("x", "a", "m", "a", "x")));
+}
+
+@Test
+public void shouldReturnFalseWhenListIsNotPalindrome() throws Exception {
+    assertFalse(isPalindrome(Arrays.asList(1, 2, 3, 4, 5)));
+}
+```
