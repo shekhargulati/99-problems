@@ -96,3 +96,15 @@ it("should reverse a list") {
   P05.reverse(List(1, 2, 3, 4, 5)) should equal(List(5, 4, 3, 2, 1))
 }
 ```
+
+### [P06](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P06.scala) **(*) Find out whether a list is a palindrome**
+
+```scala
+it("should return true when list is palindrome") {
+  P06.isPalindrome(List("x", "a", "m", "a", "x")) should be(true)
+}
+
+it("should return false when list is not palindrome") {
+  P06.isPalindrome(List(1, 2, 3, 4, 5)) should be(false)
+}
+```
