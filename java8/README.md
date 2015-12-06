@@ -147,3 +147,23 @@ public void shouldReturnEmptyListWhenTryingToFlattenAnEmptyList() throws Excepti
     assertTrue(flatten.isEmpty());
 }
 ```
+
+### [P08](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P08.java) **(\*\*) Eliminate consecutive duplicates of list elements**
+
+If a list contains repeated elements they should be replaced with a single copy of the element. The order of the elements should not be changed.
+
+```java
+@Test
+public void shouldRemoveConsecutiveDuplicatesInAList() throws Exception {
+   List<String> compressedList = P08.compress(asList("a", "a", "a", "a", "b", "c", "c", "d", "e", "e", "e", "e"));
+   assertThat(compressedList, hasSize(5));
+   assertThat(compressedList, contains("a", "b", "c","d", "e"));
+}
+
+@Test
+public void shouldNotRemoveNonConsecutiveSimilarElementsFromAList() throws Exception {
+   List<String> compressedList = P08.compress(asList("a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e"));
+   assertThat(compressedList, hasSize(6));
+   assertThat(compressedList, contains("a", "b", "c","a", "d", "e"));
+}
+```
