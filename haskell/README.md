@@ -90,3 +90,12 @@ False
 Prelude> flatten (List [Elem 1, List [Elem 2, List [Elem 3, Elem 4], Elem 5]])
 [1,2,3,4,5]
 ```
+
+### [P08](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P08.hs) **(\*\*) Eliminate consecutive duplicates of list elements**
+
+If a list contains repeated elements they should be replaced with a single copy of the element. The order of the elements should not be changed
+
+```haskell
+Prelude> compress ["a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e"]
+["a","b","c","a","d","e"]
+```
