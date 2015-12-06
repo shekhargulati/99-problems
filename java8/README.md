@@ -122,7 +122,7 @@ public void shouldReturnFalseWhenListIsNotPalindrome() throws Exception {
 }
 ```
 
-### [P07](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P07.java) **(**) Flatten a nested list structure**
+### [P07](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P07.java) **(\*\*) Flatten a nested list structure**
 
 ```java
 import static java.util.Arrays.asList;
