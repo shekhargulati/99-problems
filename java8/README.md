@@ -121,3 +121,29 @@ public void shouldReturnFalseWhenListIsNotPalindrome() throws Exception {
     assertFalse(isPalindrome(Arrays.asList(1, 2, 3, 4, 5)));
 }
 ```
+
+### [P07](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P07.java) **(**) Flatten a nested list structure**
+
+```java
+import static java.util.Arrays.asList;
+
+@Test
+public void shouldFlattenAListOfList() throws Exception {
+    List<String> flatten = P07.flatten(asList("a", asList("b", asList("c", "d")), "e"), String.class);
+    assertThat(flatten, hasSize(5));
+    assertThat(flatten, hasItems("a", "b", "c", "d", "e"));
+}
+
+@Test
+public void shouldFlattenDeepNestedLists() throws Exception {
+    List<String> flatten = P07.flatten(asList("a", asList("b", asList("c", asList("d", "e", asList("f", "g"))), "h")), String.class);
+    assertThat(flatten, hasSize(8));
+    assertThat(flatten, hasItems("a", "b", "c", "d", "e", "f", "g", "h"));
+}
+
+@Test
+public void shouldReturnEmptyListWhenTryingToFlattenAnEmptyList() throws Exception {
+    List<String> flatten = P07.flatten(Collections.emptyList(), String.class);
+    assertTrue(flatten.isEmpty());
+}
+```
