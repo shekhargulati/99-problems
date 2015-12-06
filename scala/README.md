@@ -130,3 +130,21 @@ it("should flatten deep nested lists") {
   flatten should be(List("a", "b", "c", "d", "e", "f", "g", "h"))
 }
 ```
+
+### [P08](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P08.scala) **(\*\*) Eliminate consecutive duplicates of list elements**
+
+If a list contains repeated elements they should be replaced with a single copy of the element. The order of the elements should not be changed.
+
+```scala
+it("should remove consecutive duplicates in a list") {
+  val compressedList: List[String] = P08.compress(List("a", "a", "a", "a", "b", "c", "c", "d", "e", "e", "e", "e"))
+  compressedList should have size 5
+  compressedList should be(List("a", "b", "c", "d", "e"))
+}
+
+it("should not remove non consecutive duplicates in a list") {
+  val compressedList: List[String] = P08.compress(List("a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e"))
+  compressedList should have size 6
+  compressedList should be(List("a", "b", "c", "a", "d", "e"))
+}
+```
