@@ -108,3 +108,25 @@ it("should return false when list is not palindrome") {
   P06.isPalindrome(List(1, 2, 3, 4, 5)) should be(false)
 }
 ```
+
+### [P07](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P07.scala) **(\*\*) Flatten a nested list structure**
+
+
+```scala
+it("should return empty list when flatten an empty list") {
+  val flatten: List[Any] = P07.flatten(List())
+  flatten shouldBe List()
+}
+
+it("should flatten nested lists") {
+  val flatten: List[Any] = P07.flatten(List("a", List("b", List("c", "d")), "e"))
+  flatten should have size 5
+  flatten should be(List("a", "b", "c", "d", "e"))
+}
+
+it("should flatten deep nested lists") {
+  val flatten: List[Any] = P07.flatten(List("a", List("b", List("c", List("d", List("e", List("f", "g"))))), "h"))
+  flatten should have size 8
+  flatten should be(List("a", "b", "c", "d", "e", "f", "g", "h"))
+}
+```
