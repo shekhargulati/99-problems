@@ -83,3 +83,10 @@ True
 Prelude> isPalindrome [1,2,3,4,5]
 False
 ```
+
+### [P07](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P07.hs) **(\*\*) Flatten a nested list structure**
+
+```haskell
+Prelude> flatten (List [Elem 1, List [Elem 2, List [Elem 3, Elem 4], Elem 5]])
+[1,2,3,4,5]
+```
