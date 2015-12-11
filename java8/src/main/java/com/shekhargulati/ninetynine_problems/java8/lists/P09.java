@@ -1,0 +1,34 @@
+package com.shekhargulati.ninetynine_problems.java8.lists;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+
+/**
+ * <b>(**) Pack consecutive duplicates of list elements into sublists</b>
+ * <p>If a list contains repeated elements they should be placed in separate sublists.</p>
+ */
+public class P09 {
+
+    /*
+    Simple approach using for-each loop
+     */
+    public static <T> List<List<T>> pack(List<T> list) {
+        T lastElement = null;
+        List<List<T>> packedList = new ArrayList<>();
+        List<T> elements = new ArrayList<>();
+        for (T el : list) {
+            if (Objects.equals(lastElement, el)) {
+                elements.add(el);
+            } else {
+                elements = new ArrayList<>();
+                elements.add(el);
+                packedList.add(elements);
+            }
+            lastElement = el;
+        }
+        return packedList;
+    }
+
+
+}
