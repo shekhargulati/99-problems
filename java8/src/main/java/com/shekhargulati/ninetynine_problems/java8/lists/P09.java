@@ -18,13 +18,11 @@ public class P09 {
         List<List<T>> packedList = new ArrayList<>();
         List<T> elements = new ArrayList<>();
         for (T el : list) {
-            if (Objects.equals(lastElement, el)) {
-                elements.add(el);
-            } else {
+            if (!Objects.equals(lastElement, el)) {
                 elements = new ArrayList<>();
-                elements.add(el);
                 packedList.add(elements);
             }
+            elements.add(el);
             lastElement = el;
         }
         return packedList;
