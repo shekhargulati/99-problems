@@ -123,6 +123,6 @@ Prelude> encode ["a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e"
 Modify the result of problem 1.10 in such a way that if an element has no duplicates it is simply copied into the result list. Only elements with duplicates are transferred as [N,E] terms.
 
 ```haskell
-Prelude> encode_modified(["a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e"])
-[(4,"a"),"b",(2,"c"), (2,"a"),"d",(4,"e")]
+Prelude> encode_modified ["a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e"]
+[Right (4,"a"),Left "b",Right (2,"c"),Right (2,"a"),Left "d",Right (4,"e")]
 ```
