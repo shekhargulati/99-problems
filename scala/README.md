@@ -175,3 +175,21 @@ it("should pack only consecutive duplicates in their own list") {
   packedList(5) should equal(List("e", "e", "e", "e"))
 }
 ```
+
+### [P10](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P10.scala) **(\*\*) Run-length encoding of a list**
+
+Use the result of problem 1.09 to implement the so-called run-length encoding data compression method. Consecutive duplicates of elements are encoded as terms [N,E] where N is the number of duplicates of the element E.
+
+```scala
+it("should encode consecutive duplicate elements") {
+  val list = List("a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e")
+  val encodedList: List[(Int, String)] = P10.encode(list)
+  encodedList should have size 6
+  encodedList(0) should equal((4, "a"))
+  encodedList(1) should equal((1, "b"))
+  encodedList(2) should equal((2, "c"))
+  encodedList(3) should equal((2, "a"))
+  encodedList(4) should equal((1, "d"))
+  encodedList(5) should equal((4, "e"))
+}
+```
