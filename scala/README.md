@@ -210,3 +210,15 @@ it("should apply modified run-length on list") {
   encodedList(5) should equal((4, "e"))
 }
 ```
+
+### [P12](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P12.scala) ** (\*\*) Decode a run-length encoded list**
+
+Given a run-length code list generated as specified in problem 1.11. Construct its uncompressed version.
+
+```scala
+it("should decode an run-length encoded list") {
+  val decoded: List[String] = P12.decode(List((4, "a"), "b", (2, "c"), (2, "a"), "d", (4, "e")))
+  decoded should have length 14
+  decoded should equal(List("a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e"))
+}
+```
