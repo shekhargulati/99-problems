@@ -99,3 +99,12 @@ If a list contains repeated elements they should be replaced with a single copy 
 Prelude> compress ["a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e"]
 ["a","b","c","a","d","e"]
 ```
+
+### [P09](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P09.hs) **(\*\*) Pack consecutive duplicates of list elements into sublists**
+
+If a list contains repeated elements they should be placed in separate sublists.
+
+```haskell
+Prelude> pack ["a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e"]
+[["a","a","a","a"],["b"],["c","c"],["a","a"],["d"],["e","e","e","e"]]
+```
