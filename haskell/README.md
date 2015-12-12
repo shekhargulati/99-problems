@@ -108,3 +108,12 @@ If a list contains repeated elements they should be placed in separate sublists.
 Prelude> pack ["a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e"]
 [["a","a","a","a"],["b"],["c","c"],["a","a"],["d"],["e","e","e","e"]]
 ```
+
+### [P10](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P10.hs) **(\*\*) Run-length encoding of a list**
+
+Use the result of problem 1.09 to implement the so-called run-length encoding data compression method. Consecutive duplicates of elements are encoded as terms [N,E] where N is the number of duplicates of the element E.
+
+```
+Prelude> encode ["a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e"]
+[(4,"a"),(1,"b"),(2,"c"),(2,"a"),(1,"d"),(4,"e")]
+```
