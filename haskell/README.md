@@ -126,3 +126,10 @@ Modify the result of problem 1.10 in such a way that if an element has no duplic
 Prelude> encode_modified ["a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e"]
 [Right (4,"a"),Left "b",Right (2,"c"),Right (2,"a"),Left "d",Right (4,"e")]
 ```
+
+### [P12](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P12.hs) **(*) Decode a run-length encoded list**
+
+```haskell
+Prelude> decode [Right (4,"a"),Left "b",Right (2,"c"),Right (2,"a"),Left "d",Right (4,"e")]
+["a","a","a","a","b","c","c","a","a","d","e","e","e","e"]
+```
