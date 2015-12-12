@@ -230,3 +230,24 @@ public void shouldEncodeAList() throws Exception {
     assertThat(encodedList.get(5), is(equalTo(new SimpleEntry<>(4, "e"))));
 }
 ```
+
+### [P12](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P12.java) **(\*\*) Decode a run-length encoded list**
+
+Given a run-length code list generated as specified in problem 1.11. Construct its uncompressed version.
+
+
+```java
+@Test
+public void shouldDecodeEncodedList() throws Exception {
+    List<String> encoded = P12.decode(
+            Arrays.asList(
+                    new SimpleEntry<>(4, "a"),
+                    "b",
+                    new SimpleEntry<>(2, "c"),
+                    new SimpleEntry<>(2, "a"),
+                    "d",
+                    new SimpleEntry<>(4, "e")));
+
+    assertThat(encoded, hasSize(14));
+}
+```
