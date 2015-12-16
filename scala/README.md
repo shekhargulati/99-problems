@@ -239,3 +239,13 @@ it("should perform run-length encoding") {
   encodedList(5) should equal((4, "e"))
 }
 ```
+
+### [P14](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P14.scala) ** (*) Duplicate the elements of a list**
+
+```scala
+it("should duplicate elements in a list") {
+  val duplicateList: List[String] = P14.duplicate(List("a", "b", "c", "d"))
+  duplicateList should have length 8
+  duplicateList should equal(List("a", "a", "b", "b", "c", "c", "d", "d"))
+}
+```
