@@ -11,12 +11,15 @@ import scala.annotation.tailrec
   */
 object P13 {
 
+  /**
+    * Using dropWhile method and tail recursion
+    */
   def encode_direct[T](list: List[T]): List[Any] = {
     @tailrec
     def encode(list: List[T], result: List[Any]): List[Any] = list match {
       case x :: xs =>
         val remaining = xs.dropWhile(_ == x)
-        val duplicateCount: Int = list.size - remaining.size
+        val duplicateCount: Int = list.length - remaining.length
         duplicateCount match {
           case 1 => encode(remaining, result :+ x)
           case _ => encode(remaining, result :+(duplicateCount, x))
@@ -26,5 +29,13 @@ object P13 {
     }
     encode(list, List())
   }
+
+  def encode_direct_span[T](list: List[T]): List[Any] = list match {
+    case x :: xs =>
+      val (consecutiveDuplicates, remaining) = xs.span(_ == x)
+      (consecutiveDuplicates.length + 1, x) +: encode_direct_span(remaining)
+    case Nil => Nil
+  }
+
 
 }

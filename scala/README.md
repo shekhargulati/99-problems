@@ -222,3 +222,20 @@ it("should decode an run-length encoded list") {
   decoded should equal(List("a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e"))
 }
 ```
+
+### [P13](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P13.scala) ** (\*\*) Run-length encoding of a list (direct solution)**
+
+Implement the so-called run-length encoding data compression method directly. I.e. don't explicitly create the sublists containing the duplicates, as in problem 1.09, but only count them
+
+```scala
+it("should perform run-length encoding") {
+  val encodedList: List[Any] = P13.encode_direct(List("a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e"))
+  encodedList should have size 6
+  encodedList(0) should equal((4, "a"))
+  encodedList(1) should equal("b")
+  encodedList(2) should equal((2, "c"))
+  encodedList(3) should equal((2, "a"))
+  encodedList(4) should equal("d")
+  encodedList(5) should equal((4, "e"))
+}
+```
