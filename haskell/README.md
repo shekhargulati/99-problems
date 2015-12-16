@@ -133,3 +133,12 @@ Prelude> encode_modified ["a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e",
 Prelude> decode [Right (4,"a"),Left "b",Right (2,"c"),Right (2,"a"),Left "d",Right (4,"e")]
 ["a","a","a","a","b","c","c","a","a","d","e","e","e","e"]
 ```
+
+### [P13](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P13.hs) **(*) Run-length encoding of a list (direct solution)**
+
+Implement the so-called run-length encoding data compression method directly. i.e. don't explicitly create the sublists containing the duplicates, as in problem P09, but only count them.
+
+```
+Prelude> encode_direct ["a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e"]
+[(4,"a"),(1,"b"),(2,"c"),(2,"a"),(1,"d"),(4,"e")]
+```
