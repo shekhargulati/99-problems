@@ -251,3 +251,21 @@ public void shouldDecodeEncodedList() throws Exception {
     assertThat(encoded, hasSize(14));
 }
 ```
+
+### [P13](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P13.java) **(\*\*) Run-length encoding of a list (direct solution)**
+
+Implement the so-called run-length encoding data compression method directly. I.e. don't explicitly create the sublists containing the duplicates, as in problem P09, but only count them.
+
+```java
+@Test
+public void shouldEncodeAList() throws Exception {
+    List<SimpleEntry<Integer, String>> encodedList = P13.encode_direct(Arrays.asList("a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e"));
+    assertThat(encodedList, hasSize(6));
+    assertThat(encodedList.get(0), is(equalTo(new SimpleEntry<>(4, "a"))));
+    assertThat(encodedList.get(1), is(equalTo(new SimpleEntry<>(1, "b"))));
+    assertThat(encodedList.get(2), is(equalTo(new SimpleEntry<>(2, "c"))));
+    assertThat(encodedList.get(3), is(equalTo(new SimpleEntry<>(2, "a"))));
+    assertThat(encodedList.get(4), is(equalTo(new SimpleEntry<>(1, "d"))));
+    assertThat(encodedList.get(5), is(equalTo(new SimpleEntry<>(4, "e"))));
+}
+```
