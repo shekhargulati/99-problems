@@ -269,3 +269,14 @@ public void shouldEncodeAList() throws Exception {
     assertThat(encodedList.get(5), is(equalTo(new SimpleEntry<>(4, "e"))));
 }
 ```
+
+### [P14](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P14.java) **(*) Duplicate the elements of a list**
+
+```java
+@Test
+public void shouldDuplicateElementsInAList() throws Exception {
+    List<String> duplicates = P14.duplicate(Arrays.asList("a", "b", "c", "d"));
+    assertThat(duplicates, hasSize(8));
+    assertThat(duplicates, contains("a", "a", "b", "b", "c", "c", "d", "d"));
+}
+```
