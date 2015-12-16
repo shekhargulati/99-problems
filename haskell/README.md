@@ -134,11 +134,18 @@ Prelude> decode [Right (4,"a"),Left "b",Right (2,"c"),Right (2,"a"),Left "d",Rig
 ["a","a","a","a","b","c","c","a","a","d","e","e","e","e"]
 ```
 
-### [P13](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P13.hs) **(*) Run-length encoding of a list (direct solution)**
+### [P13](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P13.hs) **(\*\*) Run-length encoding of a list (direct solution)**
 
 Implement the so-called run-length encoding data compression method directly. i.e. don't explicitly create the sublists containing the duplicates, as in problem P09, but only count them.
 
 ```
 Prelude> encode_direct ["a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e"]
 [(4,"a"),(1,"b"),(2,"c"),(2,"a"),(1,"d"),(4,"e")]
+```
+
+### [P14](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P14.hs) **(*) Duplicate the elements of a list**
+
+```
+Prelude> duplicate ["a","b","c","d"]
+["a","a","b","b","c","c","d","d"]
 ```
