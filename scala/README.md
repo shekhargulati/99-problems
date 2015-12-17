@@ -249,3 +249,13 @@ it("should duplicate elements in a list") {
   duplicateList should equal(List("a", "a", "b", "b", "c", "c", "d", "d"))
 }
 ```
+
+### [P15](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P15.scala) ** (\*\*) Duplicate the elements of a list a given number of times**
+
+```scala
+it("should duplicate N times elements of a list") {
+  val duplicates: List[String] = P15.duplicateTimes(List("a", "b", "c"), 3)
+  duplicates should have length 9
+  duplicates should equal(List("a", "a", "a", "b", "b", "b", "c", "c", "c"))
+}
+```
