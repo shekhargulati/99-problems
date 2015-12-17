@@ -1,7 +1,6 @@
 package com.shekhargulati.ninetynine_problems.java8.lists;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
@@ -34,9 +33,5 @@ public class P09 {
         return packedList;
     }
 
-
-    public static <T> List<List<T>> pack_stream(List<T> list) {
-        return Collections.emptyList();
-    }
 
 }

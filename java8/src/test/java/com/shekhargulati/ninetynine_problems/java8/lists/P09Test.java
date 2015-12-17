@@ -42,10 +42,4 @@ public class P09Test {
         assertThat(packedList.get(5), contains("e", "e", "e", "e"));
     }
 
-
-    @Test
-    public void shouldPackConsecutiveDuplicatesInTheirOwnLists_stream() throws Exception {
-        List<List<String>> packedList = P09.pack_stream(Arrays.asList("a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e"));
-        assertThat(packedList, hasSize(6));
-    }
 }
