@@ -280,3 +280,14 @@ public void shouldDuplicateElementsInAList() throws Exception {
     assertThat(duplicates, contains("a", "a", "b", "b", "c", "c", "d", "d"));
 }
 ```
+
+### [P15](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P15.java) **(\*\*) Duplicate the elements of a list a given number of times**
+
+```java
+@Test
+public void shouldDuplicateElementsInAList() throws Exception {
+    List<String> duplicates = P15.duplicate(Arrays.asList("a", "b", "c"), 3);
+    assertThat(duplicates, hasSize(9));
+    assertThat(duplicates, contains("a", "a", "a", "b", "b", "b", "c", "c", "c"));
+}
+```
