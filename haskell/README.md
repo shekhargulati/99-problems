@@ -145,7 +145,13 @@ Prelude> encode_direct ["a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "
 
 ### [P14](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P14.hs) **(*) Duplicate the elements of a list**
 
-```
+```haskell
 Prelude> duplicate ["a","b","c","d"]
 ["a","a","b","b","c","c","d","d"]
+```
+### [P15](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P15.hs) **(\*\*) Duplicate the elements of a list a given number of times**
+
+```haskell
+Prelude> duplicate ["a","b","c"] 3
+["a","a","a","b","b","b","c","c","c"]
 ```
