@@ -327,3 +327,14 @@ public void shouldSplitInTwoHalves() throws Exception {
     assertThat(result.get(false), contains("d", "e", "f", "g", "h", "i", "k"));
 }
 ```
+
+### [P18](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P18.java) **(*) Extract a slice from a list**
+
+```java
+@Test
+public void shouldGiveSliceOfAList() throws Exception {
+    List<String> slice = P18.slice(Arrays.asList("a", "b", "c", "d", "e", "f", "g", "h", "i", "k"), 3, 7);
+    assertThat(slice, hasSize(5));
+    assertThat(slice, contains("c", "d", "e", "f", "g"));
+}
+```
