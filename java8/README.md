@@ -316,3 +316,14 @@ public void shouldReturnSameListWhenNIsZero() throws Exception {
     assertThat(result, contains("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"));
 }
 ```
+
+### [P17](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P17.java) **(*) Split a list into two parts; the length of the first part is given**
+
+```java
+@Test
+public void shouldSplitInTwoHalves() throws Exception {
+    Map<Boolean, List<String>> result = P17.split(Arrays.asList("a", "b", "c", "d", "e", "f", "g", "h", "i", "k"), 3);
+    assertThat(result.get(true), contains("a", "b", "c"));
+    assertThat(result.get(false), contains("d", "e", "f", "g", "h", "i", "k"));
+}
+```
