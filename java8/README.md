@@ -291,3 +291,28 @@ public void shouldDuplicateElementsInAList() throws Exception {
     assertThat(duplicates, contains("a", "a", "a", "b", "b", "b", "c", "c", "c"));
 }
 ```
+
+### [P16](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P16.java) **(\*\*) Drop every N'th element from a list**
+
+```java
+@Test
+public void shouldDropEveryNthElement() throws Exception {
+    List<String> result = P16.dropEveryNth(Arrays.asList("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"), 3);
+    assertThat(result, hasSize(8));
+    assertThat(result, contains("a", "b", "d", "e", "g", "h", "j", "k"));
+}
+
+@Test
+public void shouldReturnSameListWhenNIsLessThanListSize() throws Exception {
+    List<String> result = P16.dropEveryNth(Arrays.asList("a", "b"), 3);
+    assertThat(result, hasSize(2));
+    assertThat(result, contains("a", "b"));
+}
+
+@Test
+public void shouldReturnSameListWhenNIsZero() throws Exception {
+    List<String> result = P16.dropEveryNth(Arrays.asList("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"), 0);
+    assertThat(result, hasSize(11));
+    assertThat(result, contains("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"));
+}
+```
