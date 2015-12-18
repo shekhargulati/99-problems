@@ -162,8 +162,16 @@ Prelude> duplicate ["a","b","c"] 3
 Prelude> dropEveryNth ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"] 3
 ["a","b","d","e","g","h","j","k"]
 ```
+### [P17](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P17.hs) **(*) Split a list into two parts; the length of the first part is given**
 
 ```haskell
 Prelude> split ["a", "b", "c", "d", "e", "f", "g", "h", "i", "k"] 3
 (["a","b","c"],["d","e","f","g","h","i","k"])
+```
+
+### [P18](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P18.hs) **(\*\*) Extract a slice from a list**
+
+```haskell
+Prelude> slice ["a", "b", "c", "d", "e", "f", "g", "h", "i", "k"] 3 7
+["c","d","e","f"]
 ```
