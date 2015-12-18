@@ -158,7 +158,12 @@ Prelude> duplicate ["a","b","c"] 3
 
 ### [P16](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P16.hs) **(\*\*) Drop every N'th element from a list**
 
-```
+```haskell
 Prelude> dropEveryNth ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"] 3
 ["a","b","d","e","g","h","j","k"]
+```
+
+```haskell
+Prelude> split ["a", "b", "c", "d", "e", "f", "g", "h", "i", "k"] 3
+(["a","b","c"],["d","e","f","g","h","i","k"])
 ```
