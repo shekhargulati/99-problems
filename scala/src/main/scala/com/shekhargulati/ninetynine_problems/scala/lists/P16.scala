@@ -4,7 +4,7 @@ package com.shekhargulati.ninetynine_problems.scala.lists
 /**
   * (**) Drop every N'th element from a list
   * {{{
-  *     dropNth(List("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"), 3)
+  *     dropEveryNth(List("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"), 3)
   * }}}
   */
 object P16 {
@@ -12,7 +12,7 @@ object P16 {
   /*
   n is one based.
    */
-  def dropNth[T](list: List[T], n: Int): List[T] = {
+  def dropEveryNth[T](list: List[T], n: Int): List[T] = {
     if (n == 0) {
       list
     } else {
@@ -20,7 +20,7 @@ object P16 {
     }
   }
 
-  def dropNth_recursive[T](list: List[T], n: Int): List[T] = {
+  def dropEveryNth_recursive[T](list: List[T], n: Int): List[T] = {
     def drop(list: List[T], n: Int, index: Int): List[T] = {
       list match {
         case x :: xs if index % n != 0 => x +: drop(xs, n, index + 1)

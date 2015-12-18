@@ -264,19 +264,19 @@ it("should duplicate N times elements of a list") {
 
 ```scala
 it("should remove every third item in the list") {
-  val result = P16.dropNth(List("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"), 3)
+  val result = P16.dropEveryNth(List("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"), 3)
   result should have length 8
   result should be(List("a", "b", "d", "e", "g", "h", "j", "k"))
 }
 
 it("should return same list when list has less items than n ") {
-  val result = P16.dropNth(List("a", "b"), 3)
+  val result = P16.dropEveryNth(List("a", "b"), 3)
   result should have length 2
   result should be(List("a", "b"))
 }
 
 it("should return same list when n is 0") {
-  val result = P16.dropNth(List("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"), 0)
+  val result = P16.dropEveryNth(List("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"), 0)
   result should have length 11
   result should be(List("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"))
 }
