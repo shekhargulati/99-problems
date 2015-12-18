@@ -301,3 +301,13 @@ it("should split into two halves by length with size 0 and list size when n is 0
   second should be(List("a", "b", "c", "d", "e", "f", "g", "h", "i", "k"))
 }
 ```
+
+### [P18](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P18.scala) ** (\*\*) Extract a slice from a list.**
+
+```scala
+it("should return list between two indexes") {
+  val result = P18.slice(List("a", "b", "c", "d", "e", "f", "g", "h", "i", "k"), 3, 7)
+  result should have length 5
+  result should be(List("c", "d", "e", "f", "g"))
+}
+```
