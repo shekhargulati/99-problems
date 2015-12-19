@@ -185,3 +185,10 @@ Prelude> rotate ["a", "b", "c", "d", "e", "f", "g", "h"] 3
 Prelude> rotate ["a", "b", "c", "d", "e", "f", "g", "h"] (-2)
 ["g","h","a","b","c","d","e","f"]
 ```
+
+### [P20](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P20.hs) **(*) Remove the K'th element from a list**
+
+```haskell
+Prelude> removeAt ["a", "b", "c", "d"] 2
+(["a","c","d"],"b")
+```
