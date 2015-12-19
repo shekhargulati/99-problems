@@ -328,7 +328,7 @@ public void shouldSplitInTwoHalves() throws Exception {
 }
 ```
 
-### [P18](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P18.java) **(*) Extract a slice from a list**
+### [P18](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P18.java) **(\*\*) Extract a slice from a list**
 
 ```java
 @Test
@@ -336,5 +336,27 @@ public void shouldGiveSliceOfAList() throws Exception {
     List<String> slice = P18.slice(Arrays.asList("a", "b", "c", "d", "e", "f", "g", "h", "i", "k"), 3, 7);
     assertThat(slice, hasSize(5));
     assertThat(slice, contains("c", "d", "e", "f", "g"));
+}
+```
+
+### [P19](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P19.java) **(\*\*) Rotate a list N places to the left**
+
+```java
+@Test
+public void shouldRotateAListByThreeElementsWhenNIs3() throws Exception {
+    List<String> rotated = P19.rotate(Arrays.asList("a", "b", "c", "d", "e", "f", "g", "h"), 3);
+    assertThat(rotated, equalTo(Arrays.asList("d", "e", "f", "g", "h", "a", "b", "c")));
+}
+
+@Test
+public void shouldReturnSameListWhenNIs0() throws Exception {
+    List<String> rotated = P19.rotate(Arrays.asList("a", "b", "c", "d", "e", "f", "g", "h"), 0);
+    assertThat(rotated, equalTo(Arrays.asList("a", "b", "c", "d", "e", "f", "g", "h")));
+}
+
+@Test
+public void shouldRotateWhenNIsNegative() throws Exception {
+    List<String> rotated = P19.rotate(Arrays.asList("a", "b", "c", "d", "e", "f", "g", "h"), -2);
+    assertThat(rotated, equalTo(Arrays.asList("g", "h", "a", "b", "c", "d", "e", "f")));
 }
 ```
