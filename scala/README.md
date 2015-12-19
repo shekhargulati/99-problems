@@ -336,3 +336,13 @@ it("should rotate when n is negative") {
   rotated should be(List("g", "h", "a", "b", "c", "d", "e", "f"))
 }
 ```
+
+### [P20](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P20.scala) ** (*) Remove the K'th element from a list**
+
+```scala
+it("should remove kth element from a list") {
+  val result = P20.removeAt(List("a", "b", "c", "d"), 2)
+  result._1 should equal(List("a", "c", "d"))
+  result._2 should equal("b")
+}
+```
