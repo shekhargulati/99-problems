@@ -175,3 +175,13 @@ Prelude> split ["a", "b", "c", "d", "e", "f", "g", "h", "i", "k"] 3
 Prelude> slice ["a", "b", "c", "d", "e", "f", "g", "h", "i", "k"] 3 7
 ["c","d","e","f"]
 ```
+
+### [P19](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P19.hs) **(\*\*) Rotate a list N places to the left**
+
+```haskell
+Prelude> rotate ["a", "b", "c", "d", "e", "f", "g", "h"] 3
+["d","e","f","g","h","a","b","c"]
+
+Prelude> rotate ["a", "b", "c", "d", "e", "f", "g", "h"] (-2)
+["g","h","a","b","c","d","e","f"]
+```
