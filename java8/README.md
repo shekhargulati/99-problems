@@ -360,3 +360,15 @@ public void shouldRotateWhenNIsNegative() throws Exception {
     assertThat(rotated, equalTo(Arrays.asList("g", "h", "a", "b", "c", "d", "e", "f")));
 }
 ```
+
+
+### [P20](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P20.java) **(*) Remove the K'th element from a list**
+
+```java
+@Test
+public void shouldRemoveKthElementFromList() throws Exception {
+    Object[] result = P20.removeAt(Arrays.asList("a", "b", "c", "d"), 2);
+    assertThat(result[0], equalTo(Arrays.asList("a", "c", "d")));
+    assertThat(result[1], equalTo("b"));
+}
+```
