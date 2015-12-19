@@ -302,12 +302,37 @@ it("should split into two halves by length with size 0 and list size when n is 0
 }
 ```
 
-### [P18](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P18.scala) ** (\*\*) Extract a slice from a list.**
+### [P18](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P18.scala) ** (\*\*) Extract a slice from a list**
 
 ```scala
 it("should return list between two indexes") {
   val result = P18.slice(List("a", "b", "c", "d", "e", "f", "g", "h", "i", "k"), 3, 7)
   result should have length 5
   result should be(List("c", "d", "e", "f", "g"))
+}
+```
+
+### [P19](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P19.scala) ** (\*\*) Rotate a list N places to the left**
+
+```scala
+it("should make head last element and second element from left as head") {
+  val rotated = P19.rotate(List("a", "b", "c", "d", "e", "f", "g", "h"), 1)
+  rotated.head should equal("b")
+  rotated.last should equal("a")
+}
+
+it("should return same list when n is 0") {
+  val rotated = P19.rotate(List("a", "b", "c", "d", "e", "f", "g", "h"), 0)
+  rotated should be(List("a", "b", "c", "d", "e", "f", "g", "h"))
+}
+
+it("should rotate list by three elements") {
+  val rotated = P19.rotate(List("a", "b", "c", "d", "e", "f", "g", "h"), 3)
+  rotated should be(List("d", "e", "f", "g", "h", "a", "b", "c"))
+}
+
+it("should rotate when n is negative") {
+  val rotated = P19.rotate(List("a", "b", "c", "d", "e", "f", "g", "h"), -2)
+  rotated should be(List("g", "h", "a", "b", "c", "d", "e", "f"))
 }
 ```
