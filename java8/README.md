@@ -402,3 +402,15 @@ public void shouldInsertElementAtEnd() throws Exception {
     assertThat(result, contains("a", "b", "c", "d", "alfa"));
 }
 ```
+
+### [P22](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P22.java) **(*) Create a list containing all integers within a given range**
+
+```java
+@Test
+public void shouldCreateARangeBetween4And9() throws Exception {
+    List<Integer> range = P22.range(4, 9);
+    assertThat(range, hasSize(6));
+    assertThat(range, contains(4, 5, 6, 7, 8, 9));
+
+}
+```
