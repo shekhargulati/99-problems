@@ -192,3 +192,10 @@ Prelude> rotate ["a", "b", "c", "d", "e", "f", "g", "h"] (-2)
 Prelude> removeAt ["a", "b", "c", "d"] 2
 (["a","c","d"],"b")
 ```
+
+### [P21](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P21.hs) **(*) Insert an element at a given position into a list**
+
+```haskell
+Prelude> insertAt ["a", "b", "c", "d"] 2 "alfa"
+["a","alfa","b","c","d"]
+```
