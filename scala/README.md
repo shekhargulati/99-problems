@@ -369,3 +369,13 @@ it("should insert element at the end position") {
   result should be(List("a", "b", "c", "d", "alfa"))
 }
 ```
+
+### [P22](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P22.scala) ** (*) Create a list containing all integers within a given range**
+
+```scala
+it("should give a range between 4 to 9 both inclusive") {
+  val range: List[Int] = P22.range(4, 9)
+  range should have length 6
+  range should be(List(4, 5, 6, 7, 8, 9))
+}
+```
