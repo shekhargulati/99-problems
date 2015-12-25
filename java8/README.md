@@ -372,3 +372,33 @@ public void shouldRemoveKthElementFromList() throws Exception {
     assertThat(result[1], equalTo("b"));
 }
 ```
+
+### [P21](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P21.java) **(*) Insert an element at a given position into a list**
+
+```java
+@Test
+public void shouldInsertElementAtSecondPosition() throws Exception {
+    List<String> input = Stream.of("a", "b", "c", "d").collect(toList());
+    List<String> result = P21.insertAt(input, 2, "alfa");
+    assertThat(result, hasSize(5));
+    assertThat(result, contains("a", "alfa", "b", "c", "d"));
+
+}
+
+@Test
+public void shouldInsertElementAtFirstPosition() throws Exception {
+    List<String> input = Stream.of("a", "b", "c", "d").collect(toList());
+    List<String> result = P21.insertAt(input, 1, "alfa");
+    assertThat(result, hasSize(5));
+    assertThat(result, contains("alfa", "a", "b", "c", "d"));
+
+}
+
+@Test
+public void shouldInsertElementAtEnd() throws Exception {
+    List<String> input = Stream.of("a", "b", "c", "d").collect(toList());
+    List<String> result = P21.insertAt(input, 5, "alfa");
+    assertThat(result, hasSize(5));
+    assertThat(result, contains("a", "b", "c", "d", "alfa"));
+}
+```
