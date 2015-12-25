@@ -199,3 +199,10 @@ Prelude> removeAt ["a", "b", "c", "d"] 2
 Prelude> insertAt ["a", "b", "c", "d"] 2 "alfa"
 ["a","alfa","b","c","d"]
 ```
+
+### [P22](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P22.hs) **(*) Create a list containing all integers within a given range**
+
+```haskell
+Prelude> range 4 9
+[4,5,6,7,8,9]
+```
