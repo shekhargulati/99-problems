@@ -15,6 +15,12 @@ public class P20 {
         return new Object[]{input, kth};
     }
 
+    public static <T> Object[] removeAt0(List<T> list, int k) {
+        List<T> input = new ArrayList<>(list);
+        T kth = input.remove(k);
+        return new Object[]{input, kth};
+    }
+
     public static <T> Object[] removeAt_splitAt(List<T> list, int k) {
         Map<Boolean, List<T>> split = P17.split(list, k);
         List<T> first = split.get(true);

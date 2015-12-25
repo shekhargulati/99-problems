@@ -414,3 +414,14 @@ public void shouldCreateARangeBetween4And9() throws Exception {
 
 }
 ```
+
+### [P23](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P23.java) **(\*\*) Extract a given number of randomly selected elements from a list**
+
+```java
+@Test
+public void shouldReturnAListOfThreeRandomSelectedElements() throws Exception {
+    List<String> result = P23.randomSelect(Arrays.asList("a", "b", "c", "d", "e", "f", "g", "h"), 3);
+    System.out.println(result);
+    assertThat(result, hasSize(3));
+}
+```
