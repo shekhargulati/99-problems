@@ -206,3 +206,9 @@ Prelude> insertAt ["a", "b", "c", "d"] 2 "alfa"
 Prelude> range 4 9
 [4,5,6,7,8,9]
 ```
+
+### [P23](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P23.hs) **(\*\*) Extract a given number of randomly selected elements from a list**
+
+```haskell
+Prelude> randomSelect ["a", "b", "c", "d", "e", "f", "g", "h"] 3
+```
