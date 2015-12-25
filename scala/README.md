@@ -346,3 +346,26 @@ it("should remove kth element from a list") {
   result._2 should equal("b")
 }
 ```
+
+### [P21](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P21.scala) ** (*) Insert an element at a given position into a list**
+
+```scala
+it("should insert element at the second position") {
+  val result = P21.insertAt(List("a", "b", "c", "d"), 2, "alfa")
+  result should have length 5
+  result should be(List("a", "alfa", "b", "c", "d"))
+}
+
+
+it("should insert element at the zeroth position") {
+  val result = P21.insertAt(List("a", "b", "c", "d"), 1, "alfa")
+  result should have length 5
+  result should be(List("alfa", "a", "b", "c", "d"))
+}
+
+it("should insert element at the end position") {
+  val result = P21.insertAt(List("a", "b", "c", "d"), 5, "alfa")
+  result should have length 5
+  result should be(List("a", "b", "c", "d", "alfa"))
+}
+```
