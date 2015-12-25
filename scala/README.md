@@ -379,3 +379,14 @@ it("should give a range between 4 to 9 both inclusive") {
   range should be(List(4, 5, 6, 7, 8, 9))
 }
 ```
+
+### [P23](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P23.scala) ** (\*\*) Extract a given number of randomly selected elements from a list**
+
+Hint: Use the built-in `scala.util.Random` and the result of problem P20
+
+```scala
+it("should randomly select three elements") {
+  val randomElements: List[String] = P23.randomSelect(List("a", "b", "c", "d", "e", "f", "g", "h"), 3)
+  randomElements should have length 3
+}
+```
