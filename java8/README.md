@@ -438,3 +438,17 @@ public void shouldGive6RandomNumbersFromARangeStartingFrom1To49() throws Excepti
     System.out.println(randomList); // One possible output [47, 30, 36, 38, 11, 1]
 }
 ```
+
+### [P25](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P25.java) **(*) Generate a random permutation of the elements of a list**
+
+> Hint: Use the solution of problem P23
+
+```java
+@Test
+public void shouldGenerateRandomPermutationOfElementsOfAList() throws Exception {
+    List<String> permutation = P25.randomPermutation(Stream.of("a", "b", "c", "d", "e", "f").collect(toList()));
+    assertThat(permutation, hasSize(6));
+    assertThat(permutation, containsInAnyOrder("a", "b", "c", "d", "e", "f"));
+    System.out.println(permutation); // one possible output [a, e, f, c, b, d]
+}
+```

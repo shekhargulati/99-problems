@@ -24,7 +24,7 @@ public class P23 {
         T t = (T) objects[1];
         List<T> result = new ArrayList<>();
         result.add(t);
-        result.addAll(randomSelect(remaining, n - 1));
+        result.addAll(randomSelectR(remaining, n - 1));
         return result;
     }
 
