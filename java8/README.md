@@ -425,3 +425,16 @@ public void shouldReturnAListOfThreeRandomSelectedElements() throws Exception {
     assertThat(result, hasSize(3));
 }
 ```
+
+### [P24](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P24.java) **(*) Lotto: Draw N different random numbers from the set 1..M**
+
+> Hint: Combine the solutions of problems P22 and P23
+
+```java
+@Test
+public void shouldGive6RandomNumbersFromARangeStartingFrom1To49() throws Exception {
+    List<Integer> randomList = P24.randomSelect(6, 1, 49);
+    assertThat(randomList, hasSize(6));
+    System.out.println(randomList); // One possible output [47, 30, 36, 38, 11, 1]
+}
+```
