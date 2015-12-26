@@ -1,3 +1,4 @@
+module P23 where
 import P20
 
 -- (**) Extract a given number of randomly selected elements from a list

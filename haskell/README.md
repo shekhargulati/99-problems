@@ -212,3 +212,12 @@ Prelude> range 4 9
 ```haskell
 Prelude> randomSelect ["a", "b", "c", "d", "e", "f", "g", "h"] 3
 ```
+
+### [P24](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P24.hs) **(*) Lotto: Draw N different random numbers from the set 1..M**
+
+> Hint: Combine the solutions of problems P22 and P23
+
+```haskell
+randomSelect_lotto 6 (1,49)
+[48,2,42,42,2,8]
+```
