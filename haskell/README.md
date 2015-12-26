@@ -218,6 +218,15 @@ Prelude> randomSelect ["a", "b", "c", "d", "e", "f", "g", "h"] 3
 > Hint: Combine the solutions of problems P22 and P23
 
 ```haskell
-randomSelect_lotto 6 (1,49)
+Prelude> randomSelect_lotto 6 (1,49)
 [48,2,42,42,2,8]
+```
+
+### [P25](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P25.hs) **(*) Generate a random permutation of the elements of a list**
+
+> Hint: Use the solution of problem P23
+
+```haskell
+Prelude> randomPermutation ["a", "b", "c", "d", "e", "f"]
+["b","a","b","c","a","a"]
 ```
