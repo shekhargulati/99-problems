@@ -393,6 +393,8 @@ it("should randomly select three elements") {
 
 ### [P24](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P24.scala) ** (*) Lotto: Draw N different random numbers from the set 1..M**
 
+> Hint: Combine the solutions of problems P22 and P23
+
 ```scala
 it("should give 6 random number between 1 and 49") {
   val randomList: List[Int] = P24.randomSelect(6, (1, 49))
