@@ -402,3 +402,14 @@ it("should give 6 random number between 1 and 49") {
   println(randomList) // One possible output List(18, 47, 6, 43, 48, 38)
 }
 ```
+### [P25](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P25.scala) ** (*) Generate a random permutation of the elements of a list**
+
+```scala
+it("should generate random permutation of elements of a list") {
+  val permutation: List[String] = P25.randomPermutation(List("a", "b", "c", "d", "e", "f"))
+  permutation should have length 6
+  permutation should contain theSameElementsAs  List("a", "b", "c", "d", "e", "f")
+  println(permutation) // One possible output List(b, a, c, e, d, f)
+}
+}
+```

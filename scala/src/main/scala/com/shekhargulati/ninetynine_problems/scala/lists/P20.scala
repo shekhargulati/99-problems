@@ -10,6 +10,8 @@ object P20 {
    */
   def removeAt[T](list: List[T], k: Int): (List[T], T) = (list.take(k - 1) ++ list.drop(k), list(k - 1))
 
+  def removeAt0[T](list: List[T], k: Int): (List[T], T) = (list.take(k) ++ list.drop(k + 1), list(k))
+
   /*
   Using splitAt
    */

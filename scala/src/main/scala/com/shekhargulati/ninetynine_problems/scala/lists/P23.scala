@@ -20,7 +20,7 @@ object P23 {
     if (n == 0) {
       Nil
     } else {
-      val (l, el) = P20.removeAt(list, Random.nextInt(list.size))
+      val (l, el) = P20.removeAt0(list, Random.nextInt(list.size))
       el :: randomSelectR(l, n - 1)
     }
 
