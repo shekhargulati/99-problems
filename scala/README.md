@@ -414,3 +414,12 @@ it("should generate random permutation of elements of a list") {
   println(permutation) // One possible output List(b, a, c, e, d, f)
 }
 ```
+
+### [P26](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P26.scala) ** (\*\*) Generate the combinations of K distinct objects chosen from the N elements of a list**
+
+```scala
+it("should generate all combinations of size K from N elements of a list") {
+  val combinations = P26.combinations(List("a", "b", "c", "d", "e", "f"), 3)
+  combinations should have length 20
+}
+```
