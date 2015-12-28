@@ -10,4 +10,12 @@ object P26 {
     */
   def combinations[T](list: List[T], k: Int): List[List[T]] = list.combinations(k).toList
 
+  def combinations1[T](list: List[T], k: Int): List[List[T]] = {
+    list match {
+      case x :: xs if k == 1 => list.map(List(_))
+      case x :: xs => combinations1(xs, k - 1).map(x :: _) ::: combinations1(xs, k)
+      case Nil => Nil
+    }
+  }
+
 }
