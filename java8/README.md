@@ -281,7 +281,7 @@ public void shouldDuplicateElementsInAList() throws Exception {
 }
 ```
 
-### [P15](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P15.java) **(\*\*) Duplicate the elements of a list a given number of times**
+### [P15](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P15.java) ** (\*\*) Duplicate the elements of a list a given number of times**
 
 ```java
 @Test
@@ -450,5 +450,16 @@ public void shouldGenerateRandomPermutationOfElementsOfAList() throws Exception 
     assertThat(permutation, hasSize(6));
     assertThat(permutation, containsInAnyOrder("a", "b", "c", "d", "e", "f"));
     System.out.println(permutation); // one possible output [a, e, f, c, b, d]
+}
+```
+
+### [P26](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P26.java) **(\*\*) Generate the combinations of K distinct objects chosen from the N elements of a list**
+
+```java
+@Test
+public void shouldFindAllCombinationsOfSize3FromAListWithSize6() throws Exception {
+    List<String> input = Stream.of("a", "b", "c", "d", "e", "f").collect(toList());
+    List<List<String>> combinations = P26.combinations(input, 3);
+    assertThat(combinations, hasSize(20));
 }
 ```
