@@ -230,3 +230,12 @@ Prelude> randomSelect_lotto 6 (1,49)
 Prelude> randomPermutation ["a", "b", "c", "d", "e", "f"]
 ["b","a","b","c","a","a"]
 ```
+
+### [P26](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P26.hs) **(\*\*) Generate the combinations of K distinct objects chosen from the N elements of a list**
+
+
+```haskell
+Prelude> combinations ["a", "b", "c", "d", "e", "f"] 3
+
+[["a","b","c"],["a","b","d"],["a","c","d"],["b","c","d"],["a","b","e"],["a","c","e"],["b","c","e"],["a","d","e"],["b","d","e"],["c","d","e"],["a","b","f"],["a","c","f"],["b","c","f"],["a","d","f"],["b","d","f"],["c","d","f"],["a","e","f"],["b","e","f"],["c","e","f"],["d","e","f"]]
+```
