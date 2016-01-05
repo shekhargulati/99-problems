@@ -19,16 +19,26 @@ object P27 {
     3. Add all of them to a list
      */
 
-    val groupWith2 = P26.combinations(list, 2)
-    val groupWith3 = P26.combinations(list, 3)
-    val groupWith4 = P26.combinations(list, 4)
-
-    groupWith2
+    P26.combinations(list, 2)
       .flatMap(xs =>
-        groupWith3.filterNot(xs3 => xs3.exists(e => xs.contains(e))).map(xs3 => (xs, xs3)))
+        P26.combinations(list diff xs, 3).filterNot(xs3 => xs3.exists(e => xs.contains(e))).map(xs3 => (xs, xs3)))
       .flatMap(xs23 =>
-        groupWith4.filterNot(xs4 => xs4.exists(e => xs23._1.contains(e)) || xs4.exists(e => xs23._2.contains(e)))
+        P26.combinations(list diff xs23._1 diff xs23._2, 4).filterNot(xs4 => xs4.exists(e => xs23._1.contains(e)) || xs4.exists(e => xs23._2.contains(e)))
           .map(xs4 => (xs23._1, xs23._2, xs4)))
+  }
+
+  def group3_1[T](list: List[T]): List[(List[T], List[T], List[T])] = {
+    /*
+    Iterate over all the possible combinations of 2
+    for each combination of 2 find combination of 3 from the remaining elements
+    return one combination of 2,3, and remaining
+     */
+
+    for {
+      groupWith2Elements <- P26.combinations(list, 2)
+      groupWith3Elements <- P26.combinations(list diff groupWith2Elements, 3)
+    }
+      yield (groupWith2Elements, groupWith3Elements, list diff groupWith2Elements diff groupWith3Elements)
   }
 
 
@@ -44,6 +54,14 @@ object P27 {
       case Nil => result
     }
 
-    groupR(groupSizes.map(gs => P26.combinations(list, gs)), List())
+
+    val allCombinations: List[List[List[T]]] = groupSizes.map(gs => P26.combinations(list, gs))
+    groupR(allCombinations, List())
+  }
+
+
+  def group_1[T](list: List[T], groupSizes: List[Int]): List[List[T]] = groupSizes match {
+    case Nil => List(Nil)
+    case n :: ns => P26.combinations(list, n) flatMap (c => group_1(list diff c, ns))
   }
 }
