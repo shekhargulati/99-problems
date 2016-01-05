@@ -423,3 +423,30 @@ it("should generate all combinations of size K from N elements of a list") {
   combinations should have length 20
 }
 ```
+
+### [P27](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P27.scala) ** (\*\*) Group the elements of a set into disjoint subsets**
+
+This problem has two parts.
+
+**Part 1**: In how many ways can a group of 9 people work in 3 disjoint subgroups of 2, 3 and 4 persons? Write a predicate that generates all the possibilities via backtracking.
+
+```scala
+it("should group 9 person into 3 groups of size 2,3, and 4") {
+  val group = P27.group3(List("aldo", "beat", "carla", "david", "evi", "flip", "gary", "hugo", "ida"))
+  group should have length 1260
+}
+```
+
+**Part 2**: Generalize the above predicate in a way that we can specify a list of group sizes and the predicate will return a list of groups.
+
+```scala
+it("should group 9 person into 3 groups of size 2,3, and 4") {
+  val group: List[List[String]] = P27.group(List("aldo", "beat", "carla", "david", "evi", "flip", "gary", "hugo", "ida"), List(2, 3, 4))
+  group should have length 1260
+}
+
+it("should group 9 person into 3 groups of size 2,2, and 5") {
+  val group: List[List[String]] = P27.group(List("aldo", "beat", "carla", "david", "evi", "flip", "gary", "hugo", "ida"), List(2, 2, 5))
+  group should have length 756
+}
+```
