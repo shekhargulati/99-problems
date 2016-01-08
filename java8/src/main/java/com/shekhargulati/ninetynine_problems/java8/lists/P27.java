@@ -1,9 +1,12 @@
 package com.shekhargulati.ninetynine_problems.java8.lists;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Stream;
 
+import static com.shekhargulati.ninetynine_problems.java8.lists.P26.combinations;
 import static java.util.stream.Collectors.toList;
 
 /**
@@ -24,15 +27,44 @@ public class P27 {
 
         List<List<List<T>>> result = new ArrayList<>();
 
-        for (List<T> combinationOf2 : P26.combinations(list, 2)) {
+        for (List<T> combinationOf2 : combinations(list, 2)) {
             List<T> r = remaining(list, combinationOf2);
-            for (List<T> combinationOf3 : P26.combinations(r, 3)) {
+            for (List<T> combinationOf3 : combinations(r, 3)) {
                 result.add(Stream.of(combinationOf2, combinationOf3, remaining(r, combinationOf3)).collect(toList()));
             }
         }
 
         return result;
     }
+
+
+    public static <T> List<List<T>> group(List<T> list, List<Integer> gss) {
+        if (gss.isEmpty()) return new ArrayList<>();
+
+        Integer n = gss.get(0);
+        List<Integer> ns = gss.subList(1, gss.size());
+        return combinations(list, n)
+                .stream()
+                .flatMap(c -> {
+                    List<T> r = remaining(list, c);
+                    List<List<T>> res = new ArrayList<>();
+                    List<List<T>> group = group(r, ns);
+                    for (List<T> ts : group) {
+                        c.addAll(ts);
+                    }
+                    res.add(c);
+                    return res.stream();
+                })
+                .collect(toList());
+    }
+
+    /**
+     * Generalize the above predicate in a way that we can specify a list of group sizes and the predicate will return a list of groups
+     */
+    public static <T> List<List<List<T>>> group(List<T> list, List<Integer> gss, int skip) {
+        return Collections.emptyList();
+    }
+
 
     private static <T> List<T> remaining(List<T> list, List<T> c) {
         return list.stream().filter(e -> !c.contains(e)).collect(toList());

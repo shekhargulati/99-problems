@@ -239,3 +239,22 @@ Prelude> combinations ["a", "b", "c", "d", "e", "f"] 3
 
 [["a","b","c"],["a","b","d"],["a","c","d"],["b","c","d"],["a","b","e"],["a","c","e"],["b","c","e"],["a","d","e"],["b","d","e"],["c","d","e"],["a","b","f"],["a","c","f"],["b","c","f"],["a","d","f"],["b","d","f"],["c","d","f"],["a","e","f"],["b","e","f"],["c","e","f"],["d","e","f"]]
 ```
+
+### [P27](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P27.hs) **(\*\*) Group the elements of a set into disjoint subsets**
+
+a) In how many ways can a group of 9 people work in 3 disjoint subgroups of 2, 3 and 4 persons? Write a predicate that generates all the possibilities via backtracking
+
+```haskell
+Prelude> length (group3 ["aldo", "beat", "carla", "david", "evi", "flip", "gary", "hugo", "ida"])
+
+1260
+```
+
+b) Generalize the above predicate in a way that we can specify a list of group sizes and the predicate will return a list of groups.
+
+
+```haskell
+Prelude> length(group' ["aldo", "beat", "carla", "david", "evi", "flip", "gary", "hugo", "ida"] [2,2,5])
+
+756
+```
