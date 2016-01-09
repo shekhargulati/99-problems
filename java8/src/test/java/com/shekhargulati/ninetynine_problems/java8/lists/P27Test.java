@@ -20,11 +20,16 @@ public class P27Test {
     }
 
     @Test
-    public void shouldGroupIntoThreeGroupsOfSize_1_and_2_part2() throws Exception {
-        List<String> input = Stream.of("a", "b", "c", "d").collect(toList());
-        List<List<String>> groups = P27.group(input, Stream.of(2, 2).collect(Collectors.toList()));
+    public void shouldGroupIntoThreeGroupsOfSize_2_2_and_5() throws Exception {
+        List<String> input = Stream.of("aldo", "beat", "carla", "david", "evi", "flip", "gary", "hugo", "ida").collect(toList());
+        List<List<List<String>>> groups = P27.group(input, Stream.of(2, 2, 5).collect(Collectors.toList()));
+        assertThat(groups, hasSize(756));
+    }
 
-        System.out.println(groups);
+    @Test
+    public void shouldGroupIntoThreeGroupsOfSize_1_and_2_part2() throws Exception {
+        List<String> input = Stream.of("a", "b", "c").collect(toList());
+        List<List<List<String>>> groups = P27.group(input, Stream.of(1, 2).collect(Collectors.toList()));
         assertThat(groups, hasSize(3));
     }
 
@@ -32,8 +37,8 @@ public class P27Test {
     @Test
     public void shouldGroupIntoThreeGroupsOfSize_2_3_and_4_part2() throws Exception {
         List<String> input = Stream.of("aldo", "beat", "carla", "david", "evi", "flip", "gary", "hugo", "ida").collect(toList());
-        List<List<String>> groups = P27.group(input, Stream.of(2, 3, 4).collect(Collectors.toList()));
-        groups.forEach(g -> System.out.println(g.size()));
+        List<List<List<String>>> groups = P27.group(input, Stream.of(2, 3, 4).collect(Collectors.toList()));
         assertThat(groups, hasSize(1260));
     }
+
 }

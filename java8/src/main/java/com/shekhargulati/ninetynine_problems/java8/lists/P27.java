@@ -1,8 +1,6 @@
 package com.shekhargulati.ninetynine_problems.java8.lists;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -38,31 +36,25 @@ public class P27 {
     }
 
 
-    public static <T> List<List<T>> group(List<T> list, List<Integer> gss) {
-        if (gss.isEmpty()) return new ArrayList<>();
-
-        Integer n = gss.get(0);
+    public static <T> List<List<List<T>>> group(List<T> list, List<Integer> gss) {
+        if (gss.isEmpty()) {
+            List<List<List<T>>> lists = new ArrayList<>();
+            lists.add(new ArrayList<>());
+            return lists;
+        }
+        int n = gss.get(0);
         List<Integer> ns = gss.subList(1, gss.size());
-        return combinations(list, n)
-                .stream()
-                .flatMap(c -> {
-                    List<T> r = remaining(list, c);
-                    List<List<T>> res = new ArrayList<>();
-                    List<List<T>> group = group(r, ns);
-                    for (List<T> ts : group) {
-                        c.addAll(ts);
-                    }
-                    res.add(c);
-                    return res.stream();
-                })
-                .collect(toList());
-    }
-
-    /**
-     * Generalize the above predicate in a way that we can specify a list of group sizes and the predicate will return a list of groups
-     */
-    public static <T> List<List<List<T>>> group(List<T> list, List<Integer> gss, int skip) {
-        return Collections.emptyList();
+        List<List<List<T>>> result = new ArrayList<>();
+        for (List<T> c : combinations(list, n)) {
+            List<T> remaining = remaining(list, c);
+            for (List<List<T>> cg : group(remaining, ns)) {
+                List<List<T>> sg = new ArrayList<>();
+                sg.add(c);
+                sg.addAll(cg);
+                result.add(sg);
+            }
+        }
+        return result;
     }
 
 

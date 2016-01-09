@@ -463,3 +463,27 @@ public void shouldFindAllCombinationsOfSize3FromAListWithSize6() throws Exceptio
     assertThat(combinations, hasSize(20));
 }
 ```
+
+### [P27](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P27.java) **(\*\*) Group the elements of a set into disjoint subsets**
+
+a) In how many ways can a group of 9 people work in 3 disjoint subgroups of 2, 3 and 4 persons? Write a predicate that generates all the possibilities via backtracking
+
+```java
+@Test
+public void shouldGroupIntoThreeGroupsOfSize_2_3_and_4() throws Exception {
+    List<String> input = Stream.of("aldo", "beat", "carla", "david", "evi", "flip", "gary", "hugo", "ida").collect(toList());
+    List<List<List<String>>> groups = P27.group3(input);
+    assertThat(groups, hasSize(1260));
+}
+```
+
+b) Generalize the above predicate in a way that we can specify a list of group sizes and the predicate will return a list of groups.
+
+```java
+@Test
+public void shouldGroupIntoThreeGroupsOfSize_2_2_and_5() throws Exception {
+    List<String> input = Stream.of("aldo", "beat", "carla", "david", "evi", "flip", "gary", "hugo", "ida").collect(toList());
+    List<List<List<String>>> groups = P27.group(input, Stream.of(2, 2, 5).collect(Collectors.toList()));
+    assertThat(groups, hasSize(756));
+}
+```
