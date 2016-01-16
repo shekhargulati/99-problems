@@ -450,3 +450,25 @@ it("should group 9 person into 3 groups of size 2,2, and 5") {
   group should have length 756
 }
 ```
+
+### [P28](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P28.scala) **(\*\*) Sorting a list of lists according to length of sublists**
+
+a) We suppose that a list (InList) contains elements that are lists themselves. The objective is to sort the elements of InList according to their **length**. E.g. short lists first, longer lists later, or vice versa.
+
+```scala
+it("should sort list elements by length") {
+  val input = List(List("a", "b", "c"), List("d", "e"), List("f", "g", "h"), List("d", "e"), List("i", "j", "k"), List("m", "n"), List("o"))
+  val result = P28.lsort(input)
+  result should be(List(List("o"), List("d", "e"), List("d", "e"), List("m", "n"), List("a", "b", "c"), List("f", "g", "h"), List("i", "j", "k")))
+}
+```
+
+b) Again, we suppose that a list (InList) contains elements that are lists themselves. But this time the objective is to sort the elements of InList according to their **length frequency**; i.e. in the default, where sorting is done in ascending order, lists with rare lengths are placed first, others with a more frequent length come later
+
+```scala
+it("should sort list by length frequency") {
+  val input = List(List("a", "b", "c"), List("d", "e"), List("f", "g", "h"), List("d", "e"), List("i", "j", "k", "l"), List("m", "n"), List("o"))
+  val result = P28.lfsort(input)
+  result should be(List(List("i", "j", "k", "l"), List("o"), List("a", "b", "c"), List("f", "g", "h"), List("d", "e"), List("d", "e"), List("m", "n")))
+}
+```
