@@ -258,3 +258,22 @@ Prelude> length(group' ["aldo", "beat", "carla", "david", "evi", "flip", "gary",
 
 756
 ```
+
+
+### [P28](https://github.com/shekhargulati/99-problems/blob/master/haskell/lists/P28.hs) **(\*\*) Sorting a list of lists according to length of sublists**
+
+a) We suppose that a list (InList) contains elements that are lists themselves. The objective is to sort the elements of InList according to their **length**. E.g. short lists first, longer lists later, or vice versa.
+
+```haskell
+Prelude> lsort [["a", "b", "c"], ["d", "e"], ["f", "g", "h"], ["d", "e"], ["i", "j", "k"], ["m", "n"], ["o"]]
+
+[["o"],["d","e"],["d","e"],["m","n"],["a","b","c"],["f","g","h"],["i","j","k"]]
+```
+
+b) Again, we suppose that a list (InList) contains elements that are lists themselves. But this time the objective is to sort the elements of InList according to their **length frequency**; i.e. in the default, where sorting is done in ascending order, lists with rare lengths are placed first, others with a more frequent length come later.
+
+```haskell
+Prelude> lfsort [["a", "b", "c"], ["d", "e"], ["f", "g", "h"], ["d", "e"], ["i", "j", "k","l"], ["m", "n"], ["o"]]
+
+[["o"],["i","j","k","l"],["a","b","c"],["f","g","h"],["d","e"],["d","e"],["m","n"]]
+```
