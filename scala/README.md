@@ -472,3 +472,20 @@ it("should sort list by length frequency") {
   result should be(List(List("i", "j", "k", "l"), List("o"), List("a", "b", "c"), List("f", "g", "h"), List("d", "e"), List("d", "e"), List("m", "n")))
 }
 ```
+
+## Arithmetic
+
+
+### [P31](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/arithmetic/P31.scala) **(\*\*) Determine whether a given integer number is prime.**
+
+```
+it("7 is a prime number") {
+  val prime = Problem31.isPrime(7)
+  prime should be(true)
+}
+
+it("10 is not prime number") {
+  val prime = Problem31.isPrime(10)
+  prime should be(false)
+}
+```
