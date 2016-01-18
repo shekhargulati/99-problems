@@ -277,3 +277,12 @@ Prelude> lfsort [["a", "b", "c"], ["d", "e"], ["f", "g", "h"], ["d", "e"], ["i",
 
 [["o"],["i","j","k","l"],["a","b","c"],["f","g","h"],["d","e"],["d","e"],["m","n"]]
 ```
+
+## Arithmetic
+
+### [P31](https://github.com/shekhargulati/99-problems/blob/master/haskell/arithmetic/P31.hs) **(\*\*) Determine whether a given integer number is prime.**
+
+```haskell
+Prelude> isPrime 7
+True
+```
