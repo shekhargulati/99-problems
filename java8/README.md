@@ -511,3 +511,21 @@ public void shouldSortByLengthFrequency() throws Exception {
     assertThat(result, is(equalTo(Arrays.asList(Arrays.asList("i", "j", "k", "l"), Arrays.asList("o"), Arrays.asList("a", "b", "c"), Arrays.asList("f", "g", "h"), Arrays.asList("d", "e"), Arrays.asList("d", "e"), Arrays.asList("m", "n")))));
 }
 ```
+
+## Arithmetic
+
+### [P31](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/arithmetic/P31.java) **(\*\*) Determine whether a given integer number is prime.**
+
+```java
+@Test
+public void shouldSay7IsAPrimeNumber() throws Exception {
+    boolean prime = P31.isPrime(7);
+    assertTrue(prime);
+}
+
+@Test
+public void shouldSay10IsNotAPrimeNumber() throws Exception {
+    boolean prime = P31.isPrime(10);
+    assertFalse(prime);
+}
+```
