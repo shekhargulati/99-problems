@@ -1,3 +1,4 @@
+module P32 where
 import P31
 -- (**) Determine the prime factors of a given positive integer.
 

@@ -1,3 +1,4 @@
+module P10 where
 import P09
 
 -- Run-length encoding of a list

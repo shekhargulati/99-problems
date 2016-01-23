@@ -297,3 +297,10 @@ Prelude> primeFactors 315
 Prelude> primeFactors 33
 [3,11]
 ```
+
+### [P33](https://github.com/shekhargulati/99-problems/blob/master/haskell/arithmetic/P33.hs) **(\*\*) Determine the prime factors of a given positive integer (2).**
+
+```haskell
+Prelude> primeFactorsMult 315
+[[3,2],[5,1],[7,1]]
+```
