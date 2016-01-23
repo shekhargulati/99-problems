@@ -529,3 +529,19 @@ public void shouldSay10IsNotAPrimeNumber() throws Exception {
     assertFalse(prime);
 }
 ```
+
+### [P32](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/arithmetic/P32.java) **(\*\*) Determine the prime factors of a given positive integer.**
+
+```java
+@Test
+public void shouldFindPrimeFactorsOf315() throws Exception {
+    List<Integer> primeFactors = P32.primeFactors(315);
+    assertThat(primeFactors, hasItems(3, 3, 5, 7));
+}
+
+@Test
+public void shouldFindPrimeFactorsOf33() throws Exception {
+    List<Integer> primeFactors = P32.primeFactors(33);
+    assertThat(primeFactors, hasItems(3, 11));
+}
+```
