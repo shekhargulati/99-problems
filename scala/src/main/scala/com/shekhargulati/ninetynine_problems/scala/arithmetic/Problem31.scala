@@ -1,7 +1,7 @@
 package com.shekhargulati.ninetynine_problems.scala.arithmetic
 
 /**
-  * A prime number is a number that is only divisible by 1 and itself. All other numbers are Composite.
+  * A prime number is a natural number greater than 1 that is only divisible by 1 and itself. All other numbers are Composite.
   * (**) Determine whether a given integer number is prime.
   */
 object Problem31 {
@@ -27,6 +27,5 @@ object Problem31 {
       if (factors.nonEmpty) false else true
     }
   }
-
 
 }

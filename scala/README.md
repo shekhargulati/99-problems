@@ -489,3 +489,22 @@ it("10 is not prime number") {
   prime should be(false)
 }
 ```
+
+### [P32](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/arithmetic/P32.scala) **(\*\*) Determine the prime factors of a given positive integer.**
+
+```scala
+it("[2,2,2] are prime factors of 8") {
+  val fs = Problem32.primeFactors(8)
+  fs should be(List(2, 2, 2))
+}
+
+it("[2,2,3] are prime factors of 12") {
+  val fs = Problem32.primeFactors(12)
+  fs should be(List(2, 2, 3))
+}
+
+it("[3,3,5,7] are prime number factors of 315") {
+  val fs = Problem32.primeFactors(315)
+  fs should be(List(3, 3, 5, 7))
+}
+```
