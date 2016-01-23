@@ -545,3 +545,21 @@ public void shouldFindPrimeFactorsOf33() throws Exception {
     assertThat(primeFactors, hasItems(3, 11));
 }
 ```
+
+
+### [P33](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/arithmetic/P33.java) **(\*\*) Determine the prime factors of a given positive integer (2).**
+
+
+```java
+@Test
+public void shouldFindPrimeFactorsOf315() throws Exception {
+    List<SimpleEntry<Integer, Integer>> primeFactors = P33.primeFactorsMult(315);
+    assertThat(primeFactors, hasItems(new SimpleEntry<>(3, 2), new SimpleEntry<>(5, 1), new SimpleEntry<>(7, 1)));
+}
+
+@Test
+public void shouldFindPrimeFactorsOf33() throws Exception {
+    List<SimpleEntry<Integer, Integer>> primeFactors = P33.primeFactorsMult(33);
+    assertThat(primeFactors, hasItems(new SimpleEntry<>(3, 1), new SimpleEntry<>(11, 1)));
+}
+```
