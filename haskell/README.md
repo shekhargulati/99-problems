@@ -286,3 +286,14 @@ Prelude> lfsort [["a", "b", "c"], ["d", "e"], ["f", "g", "h"], ["d", "e"], ["i",
 Prelude> isPrime 7
 True
 ```
+
+
+### [P32](https://github.com/shekhargulati/99-problems/blob/master/haskell/arithmetic/P32.hs) **(\*\*) Determine the prime factors of a given positive integer.**
+
+```haskell
+Prelude> primeFactors 315
+[3,3,5,7]
+
+Prelude> primeFactors 33
+[3,11]
+```

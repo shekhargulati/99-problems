@@ -1,3 +1,4 @@
+module P31 where
 -- (**) Determine whether a given integer number is prime.
 
 isPrime :: Int -> Bool
