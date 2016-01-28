@@ -38,7 +38,7 @@ public static <T> List<T> tail(LinkedList<T> elements) {
 
 > Java 8 does not support pattern matching so you have to use if-else in your code.
 
-### [P01](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P01.java) **(*) Find the last element of a list**
+### [P01](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P01.java) **(*) Find the last element of a list**
 
 ```java
 @Test
@@ -47,7 +47,7 @@ public void shouldFindLastElementFromAListOfAlphabets() throws Exception {
 }
 ```
 
-### [P02](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P02.java) **(*) Find the last but one element of a list**
+### [P02](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P02.java) **(*) Find the last but one element of a list**
 
 ```java
 @Test
@@ -71,7 +71,7 @@ public void shouldThrowExceptionWhenListHasSingleElement() throws Exception {
 }
 ```
 
-### [P03](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P03.java) **(*) Find the Kth element of a list**
+### [P03](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P03.java) **(*) Find the Kth element of a list**
 
 The first element of a list has index 0. In the example shown below, last element would be at kth position 4.
 
@@ -83,7 +83,7 @@ public void shouldFindKthElementFromAList() throws Exception {
 }
 ```
 
-### [P04](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P04.java) **(*) Find the number of elements of a list**
+### [P04](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P04.java) **(*) Find the number of elements of a list**
 
 ```java
 @Test
@@ -98,7 +98,7 @@ public void shouldFindListOfNonEmptyList() throws Exception {
 }
 ```
 
-### [P05](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P05.java) **(*) Reverse a list**
+### [P05](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P05.java) **(*) Reverse a list**
 
 ```java
 @Test
@@ -108,7 +108,7 @@ public void shouldReverseAList() throws Exception {
 }
 ```
 
-### [P06](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P06.java) **(*) Find out whether a list is a palindrome**
+### [P06](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P06.java) **(*) Find out whether a list is a palindrome**
 
 ```java
 @Test
@@ -122,7 +122,7 @@ public void shouldReturnFalseWhenListIsNotPalindrome() throws Exception {
 }
 ```
 
-### [P07](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P07.java) **(\*\*) Flatten a nested list structure**
+### [P07](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P07.java) **(\*\*) Flatten a nested list structure**
 
 ```java
 import static java.util.Arrays.asList;
@@ -148,7 +148,7 @@ public void shouldReturnEmptyListWhenTryingToFlattenAnEmptyList() throws Excepti
 }
 ```
 
-### [P08](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P08.java) **(\*\*) Eliminate consecutive duplicates of list elements**
+### [P08](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P08.java) **(\*\*) Eliminate consecutive duplicates of list elements**
 
 If a list contains repeated elements they should be replaced with a single copy of the element. The order of the elements should not be changed.
 
@@ -168,7 +168,7 @@ public void shouldNotRemoveNonConsecutiveSimilarElementsFromAList() throws Excep
 }
 ```
 
-### [P09](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P09.java) **(\*\*) Pack consecutive duplicates of list elements into sublists**
+### [P09](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P09.java) **(\*\*) Pack consecutive duplicates of list elements into sublists**
 
 If a list contains repeated elements they should be placed in separate sublists.
 
@@ -195,7 +195,7 @@ public void shouldPackConsecutiveDuplicatesInTheirOwnLists() throws Exception {
 }
 ```
 
-### [P10](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P10.java) **(*) Run-length encoding of a list**
+### [P10](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P10.java) **(*) Run-length encoding of a list**
 
 Use the result of problem 1.09 to implement the so-called run-length encoding data compression method. Consecutive duplicates of elements are encoded as terms [N,E] where N is the number of duplicates of the element E.
 
@@ -213,7 +213,7 @@ public void shouldEncodeAList() throws Exception {
 }
 ```
 
-### [P11](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P11.java) **(*) Modified run-length encoding**
+### [P11](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P11.java) **(*) Modified run-length encoding**
 
 Modify the result of problem 1.10 in such a way that if an element has no duplicates it is simply copied into the result list. Only elements with duplicates are transferred as [N,E] terms.
 
@@ -231,7 +231,7 @@ public void shouldEncodeAList() throws Exception {
 }
 ```
 
-### [P12](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P12.java) **(\*\*) Decode a run-length encoded list**
+### [P12](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P12.java) **(\*\*) Decode a run-length encoded list**
 
 Given a run-length code list generated as specified in problem 1.11. Construct its uncompressed version.
 
@@ -252,7 +252,7 @@ public void shouldDecodeEncodedList() throws Exception {
 }
 ```
 
-### [P13](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P13.java) **(\*\*) Run-length encoding of a list (direct solution)**
+### [P13](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P13.java) **(\*\*) Run-length encoding of a list (direct solution)**
 
 Implement the so-called run-length encoding data compression method directly. I.e. don't explicitly create the sublists containing the duplicates, as in problem P09, but only count them.
 
@@ -270,7 +270,7 @@ public void shouldEncodeAList() throws Exception {
 }
 ```
 
-### [P14](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P14.java) **(*) Duplicate the elements of a list**
+### [P14](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P14.java) **(*) Duplicate the elements of a list**
 
 ```java
 @Test
@@ -281,7 +281,7 @@ public void shouldDuplicateElementsInAList() throws Exception {
 }
 ```
 
-### [P15](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P15.java) ** (\*\*) Duplicate the elements of a list a given number of times**
+### [P15](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P15.java) ** (\*\*) Duplicate the elements of a list a given number of times**
 
 ```java
 @Test
@@ -292,7 +292,7 @@ public void shouldDuplicateElementsInAList() throws Exception {
 }
 ```
 
-### [P16](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P16.java) **(\*\*) Drop every N'th element from a list**
+### [P16](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P16.java) **(\*\*) Drop every N'th element from a list**
 
 ```java
 @Test
@@ -317,7 +317,7 @@ public void shouldReturnSameListWhenNIsZero() throws Exception {
 }
 ```
 
-### [P17](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P17.java) **(*) Split a list into two parts; the length of the first part is given**
+### [P17](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P17.java) **(*) Split a list into two parts; the length of the first part is given**
 
 ```java
 @Test
@@ -328,7 +328,7 @@ public void shouldSplitInTwoHalves() throws Exception {
 }
 ```
 
-### [P18](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P18.java) **(\*\*) Extract a slice from a list**
+### [P18](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P18.java) **(\*\*) Extract a slice from a list**
 
 ```java
 @Test
@@ -339,7 +339,7 @@ public void shouldGiveSliceOfAList() throws Exception {
 }
 ```
 
-### [P19](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P19.java) **(\*\*) Rotate a list N places to the left**
+### [P19](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P19.java) **(\*\*) Rotate a list N places to the left**
 
 ```java
 @Test
@@ -362,7 +362,7 @@ public void shouldRotateWhenNIsNegative() throws Exception {
 ```
 
 
-### [P20](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P20.java) **(*) Remove the K'th element from a list**
+### [P20](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P20.java) **(*) Remove the K'th element from a list**
 
 ```java
 @Test
@@ -373,7 +373,7 @@ public void shouldRemoveKthElementFromList() throws Exception {
 }
 ```
 
-### [P21](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P21.java) **(*) Insert an element at a given position into a list**
+### [P21](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P21.java) **(*) Insert an element at a given position into a list**
 
 ```java
 @Test
@@ -403,7 +403,7 @@ public void shouldInsertElementAtEnd() throws Exception {
 }
 ```
 
-### [P22](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P22.java) **(*) Create a list containing all integers within a given range**
+### [P22](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P22.java) **(*) Create a list containing all integers within a given range**
 
 ```java
 @Test
@@ -415,7 +415,7 @@ public void shouldCreateARangeBetween4And9() throws Exception {
 }
 ```
 
-### [P23](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P23.java) **(\*\*) Extract a given number of randomly selected elements from a list**
+### [P23](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P23.java) **(\*\*) Extract a given number of randomly selected elements from a list**
 
 ```java
 @Test
@@ -426,7 +426,7 @@ public void shouldReturnAListOfThreeRandomSelectedElements() throws Exception {
 }
 ```
 
-### [P24](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P24.java) **(*) Lotto: Draw N different random numbers from the set 1..M**
+### [P24](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P24.java) **(*) Lotto: Draw N different random numbers from the set 1..M**
 
 > Hint: Combine the solutions of problems P22 and P23
 
@@ -439,7 +439,7 @@ public void shouldGive6RandomNumbersFromARangeStartingFrom1To49() throws Excepti
 }
 ```
 
-### [P25](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P25.java) **(*) Generate a random permutation of the elements of a list**
+### [P25](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P25.java) **(*) Generate a random permutation of the elements of a list**
 
 > Hint: Use the solution of problem P23
 
@@ -453,7 +453,7 @@ public void shouldGenerateRandomPermutationOfElementsOfAList() throws Exception 
 }
 ```
 
-### [P26](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P26.java) **(\*\*) Generate the combinations of K distinct objects chosen from the N elements of a list**
+### [P26](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P26.java) **(\*\*) Generate the combinations of K distinct objects chosen from the N elements of a list**
 
 ```java
 @Test
@@ -464,7 +464,7 @@ public void shouldFindAllCombinationsOfSize3FromAListWithSize6() throws Exceptio
 }
 ```
 
-### [P27](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P27.java) **(\*\*) Group the elements of a set into disjoint subsets**
+### [P27](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P27.java) **(\*\*) Group the elements of a set into disjoint subsets**
 
 a) In how many ways can a group of 9 people work in 3 disjoint subgroups of 2, 3 and 4 persons? Write a predicate that generates all the possibilities via backtracking
 
@@ -488,7 +488,7 @@ public void shouldGroupIntoThreeGroupsOfSize_2_2_and_5() throws Exception {
 }
 ```
 
-### [P28](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/lists/P28.java) **(\*\*) Sorting a list of lists according to length of sublists**
+### [P28](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_01_lists/P28.java) **(\*\*) Sorting a list of lists according to length of sublists**
 
 a) We suppose that a list (InList) contains elements that are lists themselves. The objective is to sort the elements of InList according to their **length**. E.g. short lists first, longer lists later, or vice versa.
 
@@ -514,7 +514,7 @@ public void shouldSortByLengthFrequency() throws Exception {
 
 ## Arithmetic
 
-### [P31](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/arithmetic/P31.java) **(\*\*) Determine whether a given integer number is prime.**
+### [P31](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_02_arithmetic/P31.java) **(\*\*) Determine whether a given integer number is prime.**
 
 ```java
 @Test
@@ -530,7 +530,7 @@ public void shouldSay10IsNotAPrimeNumber() throws Exception {
 }
 ```
 
-### [P32](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/arithmetic/P32.java) **(\*\*) Determine the prime factors of a given positive integer.**
+### [P32](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_02_arithmetic/P32.java) **(\*\*) Determine the prime factors of a given positive integer.**
 
 ```java
 @Test
@@ -547,7 +547,7 @@ public void shouldFindPrimeFactorsOf33() throws Exception {
 ```
 
 
-### [P33](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/arithmetic/P33.java) **(\*\*) Determine the prime factors of a given positive integer (2).**
+### [P33](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_02_arithmetic/P33.java) **(\*\*) Determine the prime factors of a given positive integer (2).**
 
 
 ```java
