@@ -33,7 +33,7 @@ class P27Test extends FunSpec with Matchers {
   describe("P27 Spec part b second approach") {
 
     it("should group 3 person into 2 groups of size 1 and 2") {
-      val group: List[List[String]] = P27.group_1(List("a", "b", "c", "d"), List(2, 2))
+      val group: List[List[String]] = P27.group_1(List("a", "b", "c"), List(1, 2))
       group should have length 3
     }
 
