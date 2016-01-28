@@ -27,7 +27,7 @@ In Scala, default List[T] is an immutable LinkedList with O(1) head access and O
 
 > We are using scalatest library for test cases.
 
-### [P01](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P01.scala) **(*) Find the last element of a list**
+### [P01](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P01.scala) **(*) Find the last element of a list**
 
 ```scala
 it("should find last element") {
@@ -36,7 +36,7 @@ it("should find last element") {
 }
 ```
 
-### [P02](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P02.scala) **(*) Find the last but one element of a list**
+### [P02](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P02.scala) **(*) Find the last but one element of a list**
 
 ```scala
 it("should give second last element when list has more than two elements") {
@@ -59,7 +59,7 @@ it("should throw exception when list has one element") {
 }
 ```
 
-### [P03](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P03.scala) **(*) Find the Kth element of a list**
+### [P03](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P03.scala) **(*) Find the Kth element of a list**
 
 The first element of a list has index 0. In the example shown below, last element would be at kth position 4.
 
@@ -77,7 +77,7 @@ it("should be (k+1)th element") {
 }
 ```
 
-### [P04](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P04.scala) **(*) Find the number of elements of a list**
+### [P04](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P04.scala) **(*) Find the number of elements of a list**
 
 ```scala
 it("should be zero when list is empty") {
@@ -89,7 +89,7 @@ it("should be 5 when list has five elements") {
 }
 ```
 
-### [P05](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P05.scala) **(*) Reverse a list**
+### [P05](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P05.scala) **(*) Reverse a list**
 
 ```scala
 it("should reverse a list") {
@@ -97,7 +97,7 @@ it("should reverse a list") {
 }
 ```
 
-### [P06](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P06.scala) **(*) Find out whether a list is a palindrome**
+### [P06](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P06.scala) **(*) Find out whether a list is a palindrome**
 
 ```scala
 it("should return true when list is palindrome") {
@@ -109,7 +109,7 @@ it("should return false when list is not palindrome") {
 }
 ```
 
-### [P07](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P07.scala) **(\*\*) Flatten a nested list structure**
+### [P07](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P07.scala) **(\*\*) Flatten a nested list structure**
 
 
 ```scala
@@ -131,7 +131,7 @@ it("should flatten deep nested lists") {
 }
 ```
 
-### [P08](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P08.scala) **(\*\*) Eliminate consecutive duplicates of list elements**
+### [P08](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P08.scala) **(\*\*) Eliminate consecutive duplicates of list elements**
 
 If a list contains repeated elements they should be replaced with a single copy of the element. The order of the elements should not be changed.
 
@@ -149,7 +149,7 @@ it("should not remove non consecutive duplicates in a list") {
 }
 ```
 
-### [P09](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P09.scala) **(\*\*) Pack consecutive duplicates of list elements into sublists**
+### [P09](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P09.scala) **(\*\*) Pack consecutive duplicates of list elements into sublists**
 
 If a list contains repeated elements they should be placed in separate sublists.
 
@@ -176,7 +176,7 @@ it("should pack only consecutive duplicates in their own list") {
 }
 ```
 
-### [P10](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P10.scala) **(*) Run-length encoding of a list**
+### [P10](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P10.scala) **(*) Run-length encoding of a list**
 
 Use the result of problem 1.09 to implement the so-called run-length encoding data compression method. Consecutive duplicates of elements are encoded as terms [N,E] where N is the number of duplicates of the element E.
 
@@ -194,7 +194,7 @@ it("should encode consecutive duplicate elements") {
 }
 ```
 
-### [P11](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P11.scala) **(*) Modified run-length encoding**
+### [P11](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P11.scala) **(*) Modified run-length encoding**
 
 Modify the result of problem 1.10 in such a way that if an element has no duplicates it is simply copied into the result list. Only elements with duplicates are transferred as [N,E] terms.
 
@@ -211,7 +211,7 @@ it("should apply modified run-length on list") {
 }
 ```
 
-### [P12](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P12.scala) **(\*\*) Decode a run-length encoded list**
+### [P12](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P12.scala) **(\*\*) Decode a run-length encoded list**
 
 Given a run-length code list generated as specified in problem 1.11. Construct its uncompressed version.
 
@@ -223,7 +223,7 @@ it("should decode an run-length encoded list") {
 }
 ```
 
-### [P13](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P13.scala) **(\*\*) Run-length encoding of a list (direct solution)**
+### [P13](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P13.scala) **(\*\*) Run-length encoding of a list (direct solution)**
 
 Implement the so-called run-length encoding data compression method directly. I.e. don't explicitly create the sublists containing the duplicates, as in problem 1.09, but only count them
 
@@ -240,7 +240,7 @@ it("should perform run-length encoding") {
 }
 ```
 
-### [P14](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P14.scala) **(*) Duplicate the elements of a list**
+### [P14](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P14.scala) **(*) Duplicate the elements of a list**
 
 ```scala
 it("should duplicate elements in a list") {
@@ -250,7 +250,7 @@ it("should duplicate elements in a list") {
 }
 ```
 
-### [P15](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P15.scala) **(\*\*) Duplicate the elements of a list a given number of times**
+### [P15](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P15.scala) **(\*\*) Duplicate the elements of a list a given number of times**
 
 ```scala
 it("should duplicate N times elements of a list") {
@@ -260,7 +260,7 @@ it("should duplicate N times elements of a list") {
 }
 ```
 
-### [P16](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P16.scala) **(\*\*) Drop every N'th element from a list**
+### [P16](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P16.scala) **(\*\*) Drop every N'th element from a list**
 
 ```scala
 it("should remove every third item in the list") {
@@ -282,7 +282,7 @@ it("should return same list when n is 0") {
 }
 ```
 
-### [P17](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P17.scala) **(*) Split a list into two parts; the length of the first part is given**
+### [P17](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P17.scala) **(*) Split a list into two parts; the length of the first part is given**
 
 ```scala
 it("should split into two halves by length") {
@@ -302,7 +302,7 @@ it("should split into two halves by length with size 0 and list size when n is 0
 }
 ```
 
-### [P18](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P18.scala) **(\*\*) Extract a slice from a list**
+### [P18](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P18.scala) **(\*\*) Extract a slice from a list**
 
 ```scala
 it("should return list between two indexes") {
@@ -312,7 +312,7 @@ it("should return list between two indexes") {
 }
 ```
 
-### [P19](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P19.scala) **(\*\*) Rotate a list N places to the left**
+### [P19](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P19.scala) **(\*\*) Rotate a list N places to the left**
 
 ```scala
 it("should make head last element and second element from left as head") {
@@ -337,7 +337,7 @@ it("should rotate when n is negative") {
 }
 ```
 
-### [P20](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P20.scala) **(*) Remove the K'th element from a list**
+### [P20](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P20.scala) **(*) Remove the K'th element from a list**
 
 ```scala
 it("should remove kth element from a list") {
@@ -347,7 +347,7 @@ it("should remove kth element from a list") {
 }
 ```
 
-### [P21](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P21.scala) **(*) Insert an element at a given position into a list**
+### [P21](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P21.scala) **(*) Insert an element at a given position into a list**
 
 ```scala
 it("should insert element at the second position") {
@@ -370,7 +370,7 @@ it("should insert element at the end position") {
 }
 ```
 
-### [P22](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P22.scala) **(*) Create a list containing all integers within a given range**
+### [P22](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P22.scala) **(*) Create a list containing all integers within a given range**
 
 ```scala
 it("should give a range between 4 to 9 both inclusive") {
@@ -380,7 +380,7 @@ it("should give a range between 4 to 9 both inclusive") {
 }
 ```
 
-### [P23](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P23.scala) **(\*\*) Extract a given number of randomly selected elements from a list**
+### [P23](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P23.scala) **(\*\*) Extract a given number of randomly selected elements from a list**
 
 Hint: Use the built-in `scala.util.Random` and the result of problem P20
 
@@ -391,7 +391,7 @@ it("should randomly select three elements") {
 }
 ```
 
-### [P24](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P24.scala) **(*) Lotto: Draw N different random numbers from the set 1..M**
+### [P24](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P24.scala) **(*) Lotto: Draw N different random numbers from the set 1..M**
 
 > Hint: Combine the solutions of problems P22 and P23
 
@@ -402,7 +402,7 @@ it("should give 6 random number between 1 and 49") {
   println(randomList) // One possible output List(18, 47, 6, 43, 48, 38)
 }
 ```
-### [P25](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P25.scala) **(*) Generate a random permutation of the elements of a list**
+### [P25](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P25.scala) **(*) Generate a random permutation of the elements of a list**
 
 > Hint: Use the solution of problem P23
 
@@ -415,7 +415,7 @@ it("should generate random permutation of elements of a list") {
 }
 ```
 
-### [P26](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P26.scala) **(\*\*) Generate the combinations of K distinct objects chosen from the N elements of a list**
+### [P26](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P26.scala) **(\*\*) Generate the combinations of K distinct objects chosen from the N elements of a list**
 
 ```scala
 it("should generate all combinations of size K from N elements of a list") {
@@ -424,7 +424,7 @@ it("should generate all combinations of size K from N elements of a list") {
 }
 ```
 
-### [P27](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P27.scala) **(\*\*) Group the elements of a set into disjoint subsets**
+### [P27](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P27.scala) **(\*\*) Group the elements of a set into disjoint subsets**
 
 This problem has two parts.
 
@@ -451,7 +451,7 @@ it("should group 9 person into 3 groups of size 2,2, and 5") {
 }
 ```
 
-### [P28](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/lists/P28.scala) **(\*\*) Sorting a list of lists according to length of sublists**
+### [P28](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_01_lists/P28.scala) **(\*\*) Sorting a list of lists according to length of sublists**
 
 a) We suppose that a list (InList) contains elements that are lists themselves. The objective is to sort the elements of InList according to their **length**. E.g. short lists first, longer lists later, or vice versa.
 
@@ -476,7 +476,7 @@ it("should sort list by length frequency") {
 ## Arithmetic
 
 
-### [P31](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/arithmetic/P31.scala) **(\*\*) Determine whether a given integer number is prime.**
+### [P31](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_02_arithmetic/P31.scala) **(\*\*) Determine whether a given integer number is prime.**
 
 ```
 it("7 is a prime number") {
@@ -490,7 +490,7 @@ it("10 is not prime number") {
 }
 ```
 
-### [P32](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/arithmetic/P32.scala) **(\*\*) Determine the prime factors of a given positive integer.**
+### [P32](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_02_arithmetic/P32.scala) **(\*\*) Determine the prime factors of a given positive integer.**
 
 ```scala
 it("[2,2,2] are prime factors of 8") {
@@ -514,7 +514,7 @@ it("[3,11] are prime factors of 33"){
 }
 ```
 
-### [P33](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/arithmetic/P33.scala) **(\*\*) Determine the prime factors of a given positive integer (2).**
+### [P33](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_02_arithmetic/P33.scala) **(\*\*) Determine the prime factors of a given positive integer (2).**
 
 ```scala
 it("[[3,2],[5,1],[7,1]] is prime factors multiples of 315") {
