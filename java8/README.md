@@ -563,3 +563,23 @@ public void shouldFindPrimeFactorsOf33() throws Exception {
     assertThat(primeFactors, hasItems(new SimpleEntry<>(3, 1), new SimpleEntry<>(11, 1)));
 }
 ```
+
+### [P34](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_02_arithmetic/P34.java) **(*) A list of prime numbers**
+
+```java
+import java.util.stream.IntStream;
+
+@Test
+public void shouldGiveAllPrimeNumbersBetween2And10() throws Exception {
+    List<Integer> primeNumbers = P34.primeNumbers(IntStream.rangeClosed(2, 10));
+    assertThat(primeNumbers, hasSize(4));
+    assertThat(primeNumbers, hasItems(2, 3, 5, 7));
+}
+
+@Test
+public void shouldGiveAllPrimeNumbersBetween7And31() throws Exception {
+    List<Integer> primeNumbers = P34.primeNumbers(IntStream.rangeClosed(7, 31));
+    assertThat(primeNumbers, hasSize(8));
+    assertThat(primeNumbers, hasItems(7, 11, 13, 17, 19, 23, 29, 31));
+}
+```

@@ -13,7 +13,7 @@ object P34 {
 
     def p(numbers: List[Int]): List[Int] = numbers match {
       case n :: remaining => n +: p(remaining.filter(_ % n != 0))
-      case _ => numbers
+      case _ => Nil
     }
     p(numbers.toList).filter(_ >= range.head)
   }
