@@ -304,3 +304,10 @@ Prelude> primeFactors 33
 Prelude> primeFactorsMult 315
 [[3,2],[5,1],[7,1]]
 ```
+
+### [P34](https://github.com/shekhargulati/99-problems/blob/master/haskell/02-arithmetic/P34.hs) **(*) A list of prime numbers**
+
+```haskell
+Prelude> primeNumbers [7..31]
+[7,11,13,17,19,23,29,31]
+```
