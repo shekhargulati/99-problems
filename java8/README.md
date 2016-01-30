@@ -603,3 +603,35 @@ public void _28_isthesumof_5_and_23() throws Exception {
     assertThat(numbers, hasItems(5, 23));
 }
 ```
+
+### [P36](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/java/_02_arithmetic/P36.java) **(\*\*)  A list of Goldbach compositions.**
+
+Given a range of integers by its lower and upper limit, print a list of all even numbers and their Goldbach composition.
+
+```java
+@Test
+public void shouldProduceAListOfGoldbachCompositions() throws Exception {
+    List<SimpleEntry<Integer, List<Integer>>> compositions = P36.goldbach_list(IntStream.rangeClosed(9, 20));
+    assertThat(compositions, hasSize(6));
+    assertThat(compositions, hasItems(
+            new SimpleEntry<>(10, Arrays.asList(3, 7)),
+            new SimpleEntry<>(12, Arrays.asList(5, 7)),
+            new SimpleEntry<>(14, Arrays.asList(3, 11)),
+            new SimpleEntry<>(16, Arrays.asList(3, 13)),
+            new SimpleEntry<>(18, Arrays.asList(5, 13)),
+            new SimpleEntry<>(20, Arrays.asList(3, 17))
+    ));
+}
+
+@Test
+public void shouldProduceAListOfGoldbachCompositionsWhereBothPrimeNumbersAreGreaterThan50() throws Exception {
+    List<SimpleEntry<Integer, List<Integer>>> compositions = P36.goldbach_list1(IntStream.rangeClosed(1, 2000), 50);
+    assertThat(compositions, hasSize(4));
+    assertThat(compositions, hasItems(
+            new SimpleEntry<>(992, Arrays.asList(73, 919)),
+            new SimpleEntry<>(1382, Arrays.asList(61, 1321)),
+            new SimpleEntry<>(1856, Arrays.asList(67, 1789)),
+            new SimpleEntry<>(1928, Arrays.asList(61, 1867))
+    ));
+}
+```
