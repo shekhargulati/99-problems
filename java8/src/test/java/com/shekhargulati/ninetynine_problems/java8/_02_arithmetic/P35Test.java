@@ -18,6 +18,13 @@ public class P35Test {
     }
 
     @Test
+    public void _4_isthesumof_2_and_2() throws Exception {
+        List<Integer> numbers = P35.goldbach(4);
+        assertThat(numbers, hasSize(2));
+        assertThat(numbers, hasItems(2, 2));
+    }
+
+    @Test
     public void _28_isthesumof_5_and_23() throws Exception {
         List<Integer> numbers = P35.goldbach(28);
         assertThat(numbers, hasSize(2));
