@@ -1,4 +1,4 @@
-package com.shekhargulati.ninetynine_problems.java8._02_arithemetic;
+package com.shekhargulati.ninetynine_problems.java8._02_arithmetic;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package com.shekhargulati.ninetynine_problems.java8._02_arithemetic;
+package com.shekhargulati.ninetynine_problems.java8._02_arithmetic;
 
 import com.shekhargulati.ninetynine_problems.java8._01_lists.P10;
 
