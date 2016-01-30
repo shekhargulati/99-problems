@@ -311,3 +311,10 @@ Prelude> primeFactorsMult 315
 Prelude> primeNumbers [7..31]
 [7,11,13,17,19,23,29,31]
 ```
+
+### [P35](https://github.com/shekhargulati/99-problems/blob/master/haskell/02-arithmetic/P35.hs) **(\*\*) Goldbach's conjecture**
+
+```haskell
+Prelude> goldbach 28
+[5,23]
+```

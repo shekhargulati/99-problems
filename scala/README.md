@@ -560,6 +560,4 @@ it("28 is the sum of 5 and 23 prime numbers") {
   numbers should have length 2
   numbers should be(List(5, 23))
 }
-
-}
 ```
