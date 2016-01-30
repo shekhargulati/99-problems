@@ -561,3 +561,25 @@ it("28 is the sum of 5 and 23 prime numbers") {
   numbers should be(List(5, 23))
 }
 ```
+
+### [P36](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_02_arithmetic/P36.scala) **(\*\*)  A list of Goldbach compositions.**
+
+Given a range of integers by its lower and upper limit, print a list of all even numbers and their Goldbach composition.
+
+```scala
+it("should produce a list of goldbach compositions") {
+  val goldaCompositions = P36.goldbach_list(9 to 20)
+  goldaCompositions should have length 6
+  goldaCompositions should be(List((10, (3, 7)), (12, (5, 7)), (14, (3, 11)), (16, (3, 13)), (18, (5, 13)), (20, (3, 17))))
+}
+```
+
+In most cases, if an even number is written as the sum of two prime numbers, one of them is very small. Very rarely, the primes are both bigger than say 50. Try to find out how many such cases there are in the range 2..3000.
+
+```scala
+it("should produce a list of goldbach compositions where both primes are greater than 50") {
+  val goldaCompositions = P36.goldbach_list1(1 to 2000, 50)
+  goldaCompositions should have length 4
+  goldaCompositions should be(List((992, (73, 919)), (1382, (61, 1321)), (1856, (67, 1789)), (1928, (61, 1867))))
+}
+```
