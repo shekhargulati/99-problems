@@ -8,7 +8,7 @@ object P31 {
 
   def isPrime(number: Int): Boolean =
     if (number < 2)
-      throw new IllegalArgumentException(s"$number should be greater than 1")
+      false
     else
       !((2 to Math.sqrt(number).toInt) exists (f => number % f == 0))
 
