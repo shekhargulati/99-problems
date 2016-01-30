@@ -543,3 +543,23 @@ it("should list 7, 11, 13, 17, 19, 23, 29, 31 as prime numbers between 7 and 31"
   primeNumbers should be(List(7, 11, 13, 17, 19, 23, 29, 31))
 }
 ```
+
+### [P35](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_02_arithmetic/P35.scala) **(\*\*)  Goldbach's conjecture.**
+
+Goldbach's conjecture says that every positive even number greater than 2 is the sum of two prime numbers. Example: `28 = 5 + 23`. It is one of the most famous facts in number theory that has not been proved to be correct in the general case. It has been numerically confirmed up to very large numbers. Write a predicate to find the two prime numbers that sum up to a given even integer.
+
+```scala
+it("8 is the sum of 5 and 3 prime numbers") {
+  val numbers = P35.goldbach(8)
+  numbers should have length 2
+  numbers should be(List(3, 5))
+}
+
+it("28 is the sum of 5 and 23 prime numbers") {
+  val numbers = P35.goldbach(28)
+  numbers should have length 2
+  numbers should be(List(5, 23))
+}
+
+}
+```
