@@ -586,6 +586,8 @@ it("should produce a list of goldbach compositions where both primes are greater
 
 ### [P37](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_02_arithmetic/P37.scala) **(\*\*)  Determine the greatest common divisor of two positive integer numbers**
 
+Use Euclid's algorithm.
+
 ```scala
 it("greatest common divisior of 36 and 63 is 9") {
   val result = P37.gcd(36, 63)

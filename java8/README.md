@@ -604,7 +604,7 @@ public void _28_isthesumof_5_and_23() throws Exception {
 }
 ```
 
-### [P36](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/java/_02_arithmetic/P36.java) **(\*\*)  A list of Goldbach compositions.**
+### [P36](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/java/com/shekhargulati/ninetynine_problems/java/_02_arithmetic/P36.java) **(\*\*)  A list of Goldbach compositions.**
 
 Given a range of integers by its lower and upper limit, print a list of all even numbers and their Goldbach composition.
 
@@ -636,7 +636,7 @@ public void shouldProduceAListOfGoldbachCompositionsWhereBothPrimeNumbersAreGrea
 }
 ```
 
-### [P37](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/java/_02_arithmetic/P37.java) **(\*\*)  Determine the greatest common divisor of two positive integer numbers.**
+### [P37](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/java/com/shekhargulati/ninetynine_problems/java/_02_arithmetic/P37.java) **(\*\*)  Determine the greatest common divisor of two positive integer numbers.**
 
 Use Euclid's algorithm.
 
