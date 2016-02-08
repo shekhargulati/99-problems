@@ -583,3 +583,12 @@ it("should produce a list of goldbach compositions where both primes are greater
   goldaCompositions should be(List((992, (73, 919)), (1382, (61, 1321)), (1856, (67, 1789)), (1928, (61, 1867))))
 }
 ```
+
+### [P37](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_02_arithmetic/P37.scala) **(\*\*)  Determine the greatest common divisor of two positive integer numbers**
+
+```scala
+it("greatest common divisior of 36 and 63 is 9") {
+  val result = P37.gcd(36, 63)
+  result should be(9)
+}
+```
