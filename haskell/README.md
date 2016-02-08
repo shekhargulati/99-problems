@@ -334,3 +334,9 @@ In most cases, if an even number is written as the sum of two prime numbers, one
 Prelude> goldbach_list1 50 [1..2000]
 [(992,[73,919]),(1382,[61,1321]),(1856,[67,1789]),(1928,[61,1867])]
 ```
+### [P37](https://github.com/shekhargulati/99-problems/blob/master/haskell/02-arithmetic/P37.hs) **(\*\*) Determine the greatest common divisor of two positive integer numbers.**
+
+```haskell
+Prelude> gcd' 36 63
+9
+```
