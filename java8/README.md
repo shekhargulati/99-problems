@@ -635,3 +635,15 @@ public void shouldProduceAListOfGoldbachCompositionsWhereBothPrimeNumbersAreGrea
     ));
 }
 ```
+
+### [P37](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/java/_02_arithmetic/P37.java) **(\*\*)  Determine the greatest common divisor of two positive integer numbers.**
+
+Use Euclid's algorithm.
+
+```java
+@Test
+public void gcdOf36And63Is9() throws Exception {
+    int gcd = P37.gcd(36, 63);
+    assertThat(gcd, equalTo(9));
+}
+```
