@@ -594,3 +594,16 @@ it("greatest common divisior of 36 and 63 is 9") {
   result should be(9)
 }
 ```
+
+
+### [P38](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_02_arithmetic/P38.scala) **(*) Determine whether two positive integer numbers are coprime.**
+
+Two numbers are coprime if their greatest common divisor equals 1.
+
+
+```scala
+it("35 and 64 are coprime") {
+  val coprime: Boolean = P38.coprime(35, 64)
+  coprime should be(true)
+}
+```
