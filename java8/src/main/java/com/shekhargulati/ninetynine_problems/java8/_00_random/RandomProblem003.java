@@ -7,16 +7,10 @@ package com.shekhargulati.ninetynine_problems.java8._00_random;
 public class RandomProblem003 {
 
     public static int[][] matrixMultiplication(int[][] a, int[][] b) {
-        /*
-        1. Iterate over all the rows of A
-        2. For each row of A
-            2.1 iterate over all the columns of A and multiply them with each column of B
-         */
         int rowsA = a.length;
         int colsA = a[0].length;
         int rowsB = b.length;
         int colsB = b[0].length;
-
 
         if (colsA != rowsB) {
             throw new IllegalArgumentException("Can't perform matrix calculation on matrix with given sizes");
