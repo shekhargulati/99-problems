@@ -647,3 +647,15 @@ public void gcdOf36And63Is9() throws Exception {
     assertThat(gcd, equalTo(9));
 }
 ```
+
+### [P38](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_02_arithmetic/P38.java) **(*)  Determine whether two positive integer numbers are coprime.**
+
+Two numbers are coprime if their greatest common divisor equals 1.
+
+```java
+@Test
+public void shouldSay35And64IsCoprime() throws Exception {
+    boolean coprime = P38.coprime(35, 64);
+    assertTrue(coprime);
+}
+```
