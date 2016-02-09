@@ -340,3 +340,10 @@ Prelude> goldbach_list1 50 [1..2000]
 Prelude> gcd' 36 63
 9
 ```
+
+### [P38](https://github.com/shekhargulati/99-problems/blob/master/haskell/02-arithmetic/P38.hs) **(*) Determine whether two positive integer numbers are coprime.**
+
+```haskell
+Prelude> coprime 25 64
+True
+```
