@@ -3,7 +3,7 @@ package com.shekhargulati.ninetynine_problems.java8._00_random;
 /**
  * Given a text and a string pattern check if pattern exist in the text.
  */
-public class RandomProblem02 {
+public class RandomProblem002 {
 
     public static boolean patternExistInText(String text, String pattern) {
         /*

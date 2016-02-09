@@ -9,19 +9,19 @@ import static java.util.stream.Collectors.joining;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class RandomProblem02Test {
+public class RandomProblem002Test {
 
     @Test
     public void shouldGiveTrueWhenPatternExistInText() throws Exception {
         String text = Files.lines(Paths.get("src", "test", "resources", "book.txt")).collect(joining());
-        boolean patternExists = RandomProblem02.patternExistInText(text, "prudent");
+        boolean patternExists = RandomProblem002.patternExistInText(text, "prudent");
         assertTrue(patternExists);
     }
 
     @Test
     public void shouldGiveFalseWhenPatternDoesNotExistInText() throws Exception {
         String text = Files.lines(Paths.get("src", "test", "resources", "book.txt")).collect(joining());
-        boolean patternExists = RandomProblem02.patternExistInText(text, "awesome");
+        boolean patternExists = RandomProblem002.patternExistInText(text, "awesome");
         assertFalse(patternExists);
     }
 }
