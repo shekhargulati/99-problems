@@ -607,3 +607,15 @@ it("35 and 64 are coprime") {
   coprime should be(true)
 }
 ```
+
+### [P39](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_02_arithmetic/P39.scala) **(\*\*) Calculate Euler's totient function phi(m).**
+
+
+Euler's so-called totient function phi(m) is defined as the number of positive integers r (1 <= r < m) that are coprime to m.
+
+```scala
+it("10 has 4 Euler totient"){
+  val phi = P39.totient_phi(10)
+  phi should be(4)
+}
+```
