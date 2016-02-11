@@ -347,3 +347,10 @@ Prelude> gcd' 36 63
 Prelude> coprime 25 64
 True
 ```
+
+### [P39](https://github.com/shekhargulati/99-problems/blob/master/haskell/02-arithmetic/P39.hs) **(\*\*) Calculate Euler's totient function phi(m).**
+
+```haskell
+Prelude> totient_phi 10
+4
+```
