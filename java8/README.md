@@ -659,3 +659,15 @@ public void shouldSay35And64IsCoprime() throws Exception {
     assertTrue(coprime);
 }
 ```
+
+### [P39](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_02_arithmetic/P39.java) **(\*\*)  Calculate Euler's totient function phi(m).**
+
+Euler's so-called totient function phi(m) is defined as the number of positive integers r (1 <= r < m) that are coprime to m.
+
+```java
+@Test
+public void shouldSayPhiOf10Is4() throws Exception {
+    long phi = P39.phi(10);
+    assertThat(phi, equalTo(4L));
+}
+```
