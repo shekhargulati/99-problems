@@ -354,3 +354,20 @@ True
 Prelude> totient_phi 10
 4
 ```
+
+### [P40](https://github.com/shekhargulati/99-problems/blob/master/haskell/02-arithmetic/P40.hs) **(\*\*) Calculate Euler's totient function phi(m) (2).**
+
+See problem P39 for the definition of Euler's totient function. If the list of the prime factors of a number m is known in the form of problem 2.03 then the function phi(m) can be efficiently calculated as follows: Let `[[p1,m1],[p2,m2],[p3,m3],...]` be the list of prime factors (and their multiplicities) of a given number m. Then phi(m) can be calculated with the following formula:
+
+`phi(m) = (p1 - 1) * p1**(m1 - 1) * (p2 - 1) * p2**(m2 - 1) * (p3 - 1) * p3**(m3 - 1) * ...`
+
+Note that a**b stands for the b'th power of a.
+
+```
+Prelude> phi 10
+4
+Prelude> phi 99
+60
+```
+
+> Also you can import modules defined in 01-lists by starting ghci using the command `ghci -i../01-lists`
