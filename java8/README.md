@@ -671,3 +671,26 @@ public void shouldSayPhiOf10Is4() throws Exception {
     assertThat(phi, equalTo(4L));
 }
 ```
+
+### [P40](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_02_arithmetic/P40.java) **(\*\*)  Calculate Euler's totient function phi(m) (2).**
+
+See problem P39 for the definition of Euler's totient function. If the list of the prime factors of a number m is known in the form of problem 2.03 then the function phi(m) can be efficiently calculated as follows: Let `[[p1,m1],[p2,m2],[p3,m3],...]` be the list of prime factors (and their multiplicities) of a given number m. Then phi(m) can be calculated with the following formula:
+
+`phi(m) = (p1 - 1) * p1**(m1 - 1) * (p2 - 1) * p2**(m2 - 1) * (p3 - 1) * p3**(m3 - 1) * ...`
+
+Note that a**b stands for the b'th power of a.
+
+
+```java
+@Test
+public void phiOf10Is4() throws Exception {
+    int p = P40.phi(10);
+    assertThat(p, equalTo(4));
+}
+
+@Test
+public void phiOf99Is60() throws Exception {
+    int p = P40.phi(99);
+    assertThat(p, equalTo(60));
+}
+```
