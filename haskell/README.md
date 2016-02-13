@@ -371,3 +371,7 @@ Prelude> phi 99
 ```
 
 > Also you can import modules defined in 01-lists by starting ghci using the command `ghci -i../01-lists`
+
+### [P41](https://github.com/shekhargulati/99-problems/blob/master/haskell/02-arithmetic/P41.hs) **(*) Compare the two methods of calculating Euler's totient function.**
+
+Use the solutions of problems P39 and P40 to compare the algorithms. Take the number of logical inferences as a measure for efficiency. Try to calculate `phi(10090)` as an example.

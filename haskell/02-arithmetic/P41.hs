@@ -1,0 +1,2 @@
+-- (*) Compare the two methods of calculating Euler's totient function.
+-- There is no code required to be written. Just run the solutions in P39 and P40 and compare timing.
