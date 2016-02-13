@@ -644,3 +644,19 @@ it("phi of 99 is 60"){
   p should be(60)
 }
 ```
+
+### [P41](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_02_arithmetic/P41.scala) **(*) Compare the two methods of calculating Euler's totient function.**
+
+Use the solutions of problems P39 and P40 to compare the algorithms. Take the number of logical inferences as a measure for efficiency. Try to calculate `phi(10090)` as an example.
+
+```scala
+it("calculate phi of 10090 using P39 solution"){
+  val p = P39.totient_phi(10090)
+  p should be(4032)
+}
+
+it("calculate phi of 10090 using P40 solution"){
+  val p = P40.phi(10090)
+  p should be(4032)
+}
+```
