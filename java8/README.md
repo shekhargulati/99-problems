@@ -694,3 +694,21 @@ public void phiOf99Is60() throws Exception {
     assertThat(p, equalTo(60));
 }
 ```
+
+### [P41](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_02_arithmetic/P41.java) **(*)  Compare the two methods of calculating Euler's totient function.**
+
+Use the solutions of problems P39 and P40 to compare the algorithms. Take the number of logical inferences as a measure for efficiency. Try to calculate `phi(10090)` as an example.
+
+```java
+@Test
+public void shouldCalculatePhiOf10090UsingP39() throws Exception {
+    long p = P39.phi(10090);
+    assertThat(p, equalTo(4032L));
+}
+
+@Test
+public void shouldCalculatePhiOf10090UsingP40() throws Exception {
+    long p = P40.phi(10090);
+    assertThat(p, equalTo(4032L));
+}
+```
