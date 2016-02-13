@@ -619,3 +619,28 @@ it("10 has 4 Euler totient"){
   phi should be(4)
 }
 ```
+
+### [P40](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_02_arithmetic/P40.scala) **(\*\*) Calculate Euler's totient function phi(m) (2).**
+
+See problem P39 for the definition of Euler's totient function. If the list of the prime factors of a number m is known in the form of problem 2.03 then the function phi(m) can be efficiently calculated as follows: Let `[[p1,m1],[p2,m2],[p3,m3],...]` be the list of prime factors (and their multiplicities) of a given number m. Then phi(m) can be calculated with the following formula:
+
+`phi(m) = (p1 - 1) * p1**(m1 - 1) * (p2 - 1) * p2**(m2 - 1) * (p3 - 1) * p3**(m3 - 1) * ...`
+
+Note that a**b stands for the b'th power of a.
+
+```scala
+it("phi of 10 is 4"){
+  val p = P40.phi(10)
+  p should be(4)
+}
+
+it("phi of 9 is 6"){
+  val p = P40.phi(9)
+  p should be(6)
+}
+
+it("phi of 99 is 60"){
+  val p = P40.phi(99)
+  p should be(60)
+}
+```
