@@ -388,3 +388,11 @@ Now, write a predicate table/3 which prints the truth table of a given logical e
 table (\a b -> (and' a (or' a b)))
 [(True,True,True),(True,False,True),(False,True,False),(False,False,False)]
 ```
+
+### [P47](https://github.com/shekhargulati/99-problems/blob/master/haskell/03-logic-and-codes/P47.hs) **(*) Truth tables for logical expressions(2).**
+
+Skipping this problem for now.
+
+### [P48](https://github.com/shekhargulati/99-problems/blob/master/haskell/03-logic-and-codes/P48.hs) **(\*\*) Truth tables for logical expressions(3).**
+
+Skipping this problem for now.
