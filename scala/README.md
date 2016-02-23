@@ -682,3 +682,12 @@ it("should generate truth table of a given logical expression") {
   tableContents should be(result)
 }
 ```
+
+
+### [P47](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_03_logic_and_codes/P47.scala) **(*) Truth tables for logical expressions (2).**
+
+Skipping this problem for now.
+
+### [P48](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_03_logic_and_codes/P48.scala) **(\*\*) Truth tables for logical expressions (3).**
+
+Skipping this problem for now.
