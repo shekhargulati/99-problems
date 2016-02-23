@@ -734,3 +734,11 @@ public void shouldGenerateTruthTable() throws Exception {
     assertThat(table, is(equalTo(result)));
 }
 ```
+
+### [P47](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_03_logic_and_codes/P47.java) **(*)  Truth tables for logical expressions (2).**
+
+Skipping this problem for now.
+
+### [P48](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_03_logic_and_codes/P48.java) **(\*\*)  Truth tables for logical expressions (3).**
+
+Skipping this problem for now.
