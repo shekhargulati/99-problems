@@ -375,3 +375,16 @@ Prelude> phi 99
 ### [P41](https://github.com/shekhargulati/99-problems/blob/master/haskell/02-arithmetic/P41.hs) **(*) Compare the two methods of calculating Euler's totient function.**
 
 Use the solutions of problems P39 and P40 to compare the algorithms. Take the number of logical inferences as a measure for efficiency. Try to calculate `phi(10090)` as an example.
+
+### [P46](https://github.com/shekhargulati/99-problems/blob/master/haskell/03-logic-and-codes/P46.hs) **(\*\*) Truth tables for logical expressions.**
+
+Define predicates and/2, or/2, nand/2, nor/2, xor/2, impl/2 and equ/2 (for logical equivalence) which succeed or fail according to the result of their respective operations; e.g. and(A,B) will succeed, if and only if both A and B succeed. Note that A and B can be Prolog goals (not only the constants true and fail).
+
+A logical expression in two variables can then be written in prefix notation, as in the following example: and(or(A,B),nand(A,B)).
+
+Now, write a predicate table/3 which prints the truth table of a given logical expression in two variables.
+
+```
+table (\a b -> (and' a (or' a b)))
+[(True,True,True),(True,False,True),(False,True,False),(False,False,False)]
+```
