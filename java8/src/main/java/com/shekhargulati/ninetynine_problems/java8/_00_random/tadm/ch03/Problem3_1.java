@@ -1,4 +1,4 @@
-package com.shekhargulati.ninetynine_problems.java8._00_random.stack;
+package com.shekhargulati.ninetynine_problems.java8._00_random.tadm.ch03;
 
 import java.util.Stack;
 
@@ -8,7 +8,7 @@ import java.util.Stack;
  * Give an algorithm that returns true if a string contains properly nested and balanced parentheses, and false if otherwise.
  * For full credit, identify the position of the first offending parenthesis if the string is not properly nested and balanced.
  */
-public class ParenthesisBalanceChecker {
+public class Problem3_1 {
 
     public boolean isBalancedString(final String input) {
         /*

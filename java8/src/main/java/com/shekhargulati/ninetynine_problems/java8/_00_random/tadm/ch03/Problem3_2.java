@@ -1,4 +1,4 @@
-package com.shekhargulati.ninetynine_problems.java8._00_random.stack;
+package com.shekhargulati.ninetynine_problems.java8._00_random.tadm.ch03;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -9,7 +9,7 @@ import java.util.Stack;
  * In other words, after the reversal all pointers should now point backwards.
  * Your algorithm should take linear time.
  */
-public class ReverseLinkedList {
+public class Problem3_2 {
 
     public <T> List<T> reverse(List<T> list) {
         /*

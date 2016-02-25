@@ -1,13 +1,13 @@
-package com.shekhargulati.ninetynine_problems.java8._00_random.stack;
+package com.shekhargulati.ninetynine_problems.java8._00_random.tadm.ch03;
 
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.*;
 
-public class ParenthesisBalanceCheckerTest {
+public class Problem3_1Test {
 
-    private final ParenthesisBalanceChecker checker = new ParenthesisBalanceChecker();
+    private final Problem3_1 checker = new Problem3_1();
 
     @Test
     public void shouldSayTrueForEmptyString() throws Exception {
