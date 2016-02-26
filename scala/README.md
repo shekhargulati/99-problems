@@ -691,3 +691,30 @@ Skipping this problem for now.
 ### [P48](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_03_logic_and_codes/P48.scala) **(\*\*) Truth tables for logical expressions (3).**
 
 Skipping this problem for now.
+
+### [P49](https://github.com/shekhargulati/99-problems/blob/master/scala/src/main/scala/com/shekhargulati/ninetynine_problems/scala/_03_logic_and_codes/P49.scala) **(\*\*) Gray code.**
+
+An n-bit Gray code is a sequence of n-bit strings constructed according to certain rules. For example,
+```
+n = 1: C(1) = ['0','1'].
+n = 2: C(2) = ['00','01','11','10'].
+n = 3: C(3) = ['000','001','011','010','110','111','101','100'].
+```
+
+
+```scala
+it("gray code of n=1 is ['0','1']") {
+  val graySequence = P49.gray(1)
+  graySequence should be(List("0", "1"))
+}
+
+it("gray code of n=2 is ['00','01','11','10']") {
+  val graySequence = P49.gray(2)
+  graySequence should be(List("00", "01", "11", "10"))
+}
+
+it("gray code of n=3 is ['000', '001', '011', '010', '110', '111', '101', '100']") {
+  val graySequence = P49.gray(3)
+  graySequence should be(List("000", "001", "011", "010", "110", "111", "101", "100"))
+}
+```
