@@ -2,6 +2,14 @@ package com.shekhargulati.ninetynine_problems.java8._00_random.tadm.ch03;
 
 import java.util.Optional;
 
+/**
+ * Write a data structure that supports following operations.
+ * <p>
+ * insert(x,T) – Insert item x into the set T
+ * delete(k,T) – Delete the kth smallest element from T.
+ * member(x,T) – Return true iff x ∈ T .
+ * All operations must take O(log n) time on an n-element set.
+ */
 public class Problem3_8 {
 
     public static void main(String[] args) {
