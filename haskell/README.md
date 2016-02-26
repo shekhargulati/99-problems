@@ -396,3 +396,17 @@ Skipping this problem for now.
 ### [P48](https://github.com/shekhargulati/99-problems/blob/master/haskell/03-logic-and-codes/P48.hs) **(\*\*) Truth tables for logical expressions(3).**
 
 Skipping this problem for now.
+
+### [P49](https://github.com/shekhargulati/99-problems/blob/master/haskell/03-logic-and-codes/P49.hs) **(\*\*) Gray code.**
+
+An n-bit Gray code is a sequence of n-bit strings constructed according to certain rules. For example,
+```
+n = 1: C(1) = ['0','1'].
+n = 2: C(2) = ['00','01','11','10'].
+n = 3: C(3) = ['000','001','011','010','110','111','101','100'].
+```
+
+```haskell
+Prelude> gray 3
+["000","001","011","010","110","111","101","100"]
+```
