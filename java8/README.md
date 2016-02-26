@@ -742,3 +742,32 @@ Skipping this problem for now.
 ### [P48](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_03_logic_and_codes/P48.java) **(\*\*)  Truth tables for logical expressions (3).**
 
 Skipping this problem for now.
+
+
+### [P49](https://github.com/shekhargulati/99-problems/blob/master/java8/src/main/java/com/shekhargulati/ninetynine_problems/java8/_03_logic_and_codes/P49.java) **(\*\*)  Gray code.**
+
+An n-bit Gray code is a sequence of n-bit strings constructed according to certain rules. For example,
+```
+n = 1: C(1) = ['0','1'].
+n = 2: C(2) = ['00','01','11','10'].
+n = 3: C(3) = ['000','001','011','010','110','111','101','100'].
+```
+```java
+@Test
+public void shouldFindGrayCodeWhenNIs1() throws Exception {
+    List<String> graySequence = P49.gray(1);
+    assertThat(graySequence, contains("0", "1"));
+}
+
+@Test
+public void shouldFindGrayCodeWhenNIs2() throws Exception {
+    List<String> graySequence = P49.gray(2);
+    assertThat(graySequence, contains("00", "01", "11", "10"));
+}
+
+@Test
+public void shouldFindGrayCodeWhenNIs3() throws Exception {
+    List<String> graySequence = P49.gray(3);
+    assertThat(graySequence, contains("000", "001", "011", "010", "110", "111", "101", "100"));
+}
+```
