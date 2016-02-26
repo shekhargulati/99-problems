@@ -1,7 +1,6 @@
 package com.shekhargulati.ninetynine_problems.java8._00_random.tadm.ch03;
 
-import java.util.Optional;
-import java.util.TreeSet;
+import java.util.*;
 
 /**
  * <p>In the bin-packing problem, we are given n metal objects, each weighing between zero and one kilogram.
@@ -19,13 +18,27 @@ public class Problem3_10 {
 
     public static void main(String[] args) {
         Problem3_10 p = new Problem3_10();
-        System.out.println(p.numberOfBins(new int[]{100, 200, 600, 500, 400, 1000}));
-        System.out.println(p.numberOfBins(new int[]{100, 200, 300, 400}));
+//        System.out.println(p.numberOfBins(new int[]{100, 200, 600, 500, 400, 1000}));
+//        System.out.println(p.numberOfBins(new int[]{100, 200, 600, 500, 400, 1000}));
+        int bestCaseBins = p.numberOfBins_bestCase(new int[]{500, 600, 300, 500});
+        int worstCaseBins = p.numberOfBins_worstCase(new int[]{500, 600, 300, 500});
+        System.out.println("best case: " + bestCaseBins);
+        System.out.println("worst case: " + worstCaseBins);
     }
 
-    public int numberOfBins(int[] weights) {
 
-        TreeSet<Bin> bins = new TreeSet<>();
+    public int numberOfBins_bestCase(int[] weights) {
+        return numberOfBins(weights, (b1, b2) -> b1.remaining() - b2.remaining());
+    }
+
+    public int numberOfBins_worstCase(int[] weights) {
+        return numberOfBins(weights, (b1, b2) -> b2.remaining() - b1.remaining());
+    }
+
+
+    public int numberOfBins(int[] weights, Comparator<Bin> comparator) {
+
+        TreeSet<Bin> bins = new TreeSet<>(comparator);
         /*
          * Iterate over all the weights in an array
          * For each weight find the bin which will have least remaining space after weight is put
@@ -53,17 +66,20 @@ public class Problem3_10 {
 
 }
 
-class Bin implements Comparable<Bin> {
+class Bin {
     final int max = 1000;
     int currentConsumption = 0;
+    List<Integer> weights = new ArrayList<>();
 
     public Bin(int currentConsumption) {
+        weights.add(currentConsumption);
         this.currentConsumption = currentConsumption;
     }
 
     public Bin updateCurrentConsumption(int weight) {
-        if (this.remaining() - weight > 0) {
+        if (this.remaining() - weight >= 0) {
             this.currentConsumption += weight;
+            weights.add(weight);
         }
         return this;
     }
@@ -73,8 +89,4 @@ class Bin implements Comparable<Bin> {
     }
 
 
-    @Override
-    public int compareTo(Bin o) {
-        return this.remaining() - o.remaining();
-    }
 }
