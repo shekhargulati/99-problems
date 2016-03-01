@@ -1,4 +1,4 @@
-package com.shekhargulati.ninetynine_problems.java8._00_random.algebra;
+package com.shekhargulati.random.algebra;
 
 /**
  * Write a program that can evaluate a polynomial

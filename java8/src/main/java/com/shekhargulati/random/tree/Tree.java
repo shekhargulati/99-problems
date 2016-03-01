@@ -1,4 +1,4 @@
-package com.shekhargulati.ninetynine_problems.java8._00_random.tree;
+package com.shekhargulati.random.tree;
 
 import java.util.Objects;
 

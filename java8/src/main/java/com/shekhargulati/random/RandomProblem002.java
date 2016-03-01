@@ -1,4 +1,4 @@
-package com.shekhargulati.ninetynine_problems.java8._00_random;
+package com.shekhargulati.random;
 
 /**
  * Given a text and a string pattern check if pattern exist in the text.

@@ -1,4 +1,4 @@
-package com.shekhargulati.ninetynine_problems.java8._00_random.tadm.ch03;
+package com.shekhargulati.tadm.ch03;
 
 /**
  * Design a dictionary data structure in which search, insertion, and deletion can all be processed in O(1) time
