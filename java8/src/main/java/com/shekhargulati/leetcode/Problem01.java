@@ -43,6 +43,29 @@ public class Problem01 {
         return new int[0];
     }
 
+    /*
+    Assume array is sorted then you can do it O(n)
+     */
+    public static int[] twoSum_binarySearch(int[] numbers, int target) {
+        /*
+        Algorithm:
+        1. Iterate over all the numbers and find the second number by subtracting the first from target
+        2. Find the second number from the sorted array.
+        3. If second number is found then return index of first and second and second else move to the next number.
+         */
+        for (int i = 0; i < numbers.length; i++) {
+            int first = numbers[0];
+            if (first < target) {
+                int second = target - first;
+                int secondElementIndex = Arrays.binarySearch(numbers, second);
+                if (secondElementIndex >= 0) {
+                    return new int[]{i, secondElementIndex};
+                }
+            }
+        }
+        return new int[0];
+    }
+
 
     /*
     This solution in O(n^2)

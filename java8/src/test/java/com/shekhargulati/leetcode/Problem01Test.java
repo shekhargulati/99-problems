@@ -35,4 +35,16 @@ public class Problem01Test {
         assertThat(pairs.length, equalTo(2));
 
     }
+
+    @Test
+    public void shouldFindTwoNumberWhoseSumIsEqualToTarget_sorted_binarySearch() throws Exception {
+        int[] pairs = Problem01.twoSum_binarySearch(new int[]{2, 7, 11, 15}, 9);
+        assertTrue(Arrays.equals(pairs, new int[]{0, 1}));
+    }
+
+    @Test
+    public void shouldReturnEmptyArrayWhenNoTwoElementsInTheArrayHaveSum_sorted_binarySearch() throws Exception {
+        int[] pairs = Problem01.twoSum_binarySearch(new int[]{2, 7, 11, 15}, 12);
+        assertTrue(Arrays.equals(pairs, new int[0]));
+    }
 }
