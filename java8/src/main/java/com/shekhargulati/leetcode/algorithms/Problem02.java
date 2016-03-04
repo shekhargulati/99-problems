@@ -32,15 +32,17 @@ public class Problem02 {
             int b = second.val;
             first = first.next;
             second = second.next;
-            int sum = a + b;
-            if (a + b >= 10) {
-                result.add(rem + sum % 10);
+            int sum = a + b + rem;
+            if (sum >= 10) {
+                sum = sum % 10;
                 rem = 1;
             } else {
-                result.add(rem + sum);
                 rem = 0;
             }
+            result.add(sum);
         }
+
+        System.out.println(result);
         long end = System.currentTimeMillis();
         System.out.println(String.format("Total time taken %d millis", (end - start)));
 
