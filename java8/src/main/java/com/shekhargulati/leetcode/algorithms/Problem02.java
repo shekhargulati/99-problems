@@ -1,7 +1,6 @@
 package com.shekhargulati.leetcode.algorithms;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -23,15 +22,16 @@ public class Problem02 {
          */
 
         long start = System.currentTimeMillis();
-        List<Integer> first = Arrays.asList(2, 4, 3);
-        List<Integer> second = Arrays.asList(5, 6, 4);
+        ListNode first = new ListNode(2, new ListNode(4, new ListNode(3, null)));
+        ListNode second = new ListNode(5, new ListNode(6, new ListNode(4, null)));
 
         List<Integer> result = new ArrayList<>();
-
         int rem = 0;
-        for (int i = 0; i < first.size(); i++) {
-            int a = first.get(i);
-            int b = second.get(i);
+        while (first != null && second != null) {
+            int a = first.val;
+            int b = second.val;
+            first = first.next;
+            second = second.next;
             int sum = a + b;
             if (a + b >= 10) {
                 result.add(rem + sum % 10);
@@ -41,19 +41,30 @@ public class Problem02 {
                 rem = 0;
             }
         }
-
-        System.out.println(result);
         long end = System.currentTimeMillis();
         System.out.println(String.format("Total time taken %d millis", (end - start)));
 
     }
 
-    private class ListNode {
+    private static class ListNode {
         int val;
         ListNode next;
 
+        public ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
+
         public ListNode(int val) {
             this.val = val;
+        }
+
+        @Override
+        public String toString() {
+            return "ListNode{" +
+                    "val=" + val +
+                    ", next=" + next +
+                    '}';
         }
     }
 
