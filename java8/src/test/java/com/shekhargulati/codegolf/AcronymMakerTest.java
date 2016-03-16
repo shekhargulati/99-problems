@@ -34,4 +34,5 @@ public class AcronymMakerTest {
         final String acronym = AcronymMaker.acronym(input);
         assertThat(acronym, equalTo("JTW"));
     }
+
 }
