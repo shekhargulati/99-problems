@@ -1,5 +1,6 @@
 package com.shekhargulati.leetcode;
 
+import com.shekhargulati.leetcode.algorithms.Problem03;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;

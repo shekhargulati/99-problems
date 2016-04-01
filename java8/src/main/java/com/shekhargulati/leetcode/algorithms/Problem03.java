@@ -1,4 +1,4 @@
-package com.shekhargulati.leetcode;
+package com.shekhargulati.leetcode.algorithms;
 
 /**
  * Longest substring without repeating characters

@@ -1,0 +1,45 @@
+package com.shekhargulati.leetcode.algorithms;
+
+import java.util.Objects;
+
+/**
+ * Given a string S, find the longest palindromic substring in S.
+ * You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.
+ */
+public class Problem05 {
+
+    public static String longestPalindrome(final String input) {
+        /*
+         Algorithm:
+         1. Start from left and go toward right
+         2. For each char, pick the right most element if they are equal then take substring and compare both sides
+         3. If they are equal then we have the match.
+         4. Else move to next combination
+         */
+        String[] chars = input.split("");
+        String palindrome = null;
+        for (int i = 0; i < chars.length; i++) {
+            String left = chars[i];
+            for (int j = chars.length - 1; j > i; j--) {
+                String right = chars[j];
+                if (Objects.equals(left, right)) {
+                    String first = input.substring(i, j + 1);
+                    if (Objects.equals(first, reverse(first))) {
+                        if (palindrome == null || first.length() > palindrome.length()) {
+                            palindrome = first;
+                        }
+                    }
+                }
+            }
+        }
+        return palindrome;
+    }
+
+    private static String reverse(String in) {
+        char[] chrs = new char[in.length()];
+        for (int i = 0; i < in.length(); i++) {
+            chrs[in.length() - i - 1] = in.charAt(i);
+        }
+        return String.valueOf(chrs);
+    }
+}
