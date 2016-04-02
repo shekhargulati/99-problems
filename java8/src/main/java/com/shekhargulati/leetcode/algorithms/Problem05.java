@@ -53,6 +53,7 @@ public class Problem05 {
            1. Start with the second element and compare (i-1) with (i+1)
            if they are equal then we have palindrome so continue comparing (i-1-1) to (i+1+1) till we find palindrome
            else move to the next character and repeat the process.
+           http://articles.leetcode.com/longest-palindromic-substring-part-i/
          */
 
         char[] chars = input.toCharArray();
