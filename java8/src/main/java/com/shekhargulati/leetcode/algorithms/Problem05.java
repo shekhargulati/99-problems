@@ -1,5 +1,6 @@
 package com.shekhargulati.leetcode.algorithms;
 
+import java.util.Arrays;
 import java.util.Objects;
 
 /**
@@ -15,6 +16,8 @@ public class Problem05 {
          2. For each char, pick the right most element if they are equal then take substring and compare both sides
          3. If they are equal then we have the match.
          4. Else move to next combination
+
+         This algorithm has O(n^3) complexity.
          */
         String[] chars = input.split("");
         String palindrome = null;
@@ -42,4 +45,46 @@ public class Problem05 {
         }
         return String.valueOf(chrs);
     }
+
+
+    public static String longestPalindrome1(final String input) {
+        /*
+           Algorithm:
+           1. Start with the second element and compare (i-1) with (i+1)
+           if they are equal then we have palindrome so continue comparing (i-1-1) to (i+1+1) till we find palindrome
+           else move to the next character and repeat the process.
+         */
+
+        char[] chars = input.toCharArray();
+        String longest = String.valueOf(chars[0]);
+        for (int middle = 1; middle < input.length(); middle++) {
+            int left = middle - 1;
+            int right = middle + 1;
+            if (left >= 0 && right < input.length() && chars[left] == chars[right]) {
+                String possibleLongest = findLongest(chars, left, right);
+                if (longest.length() < possibleLongest.length()) {
+                    longest = possibleLongest;
+                }
+            }
+            if (middle >= 0 && right < input.length() && chars[middle] == chars[right]) {
+                String possibleLongest = findLongest(chars, middle, right);
+                if (longest.length() < possibleLongest.length()) {
+                    longest = possibleLongest;
+                }
+            }
+        }
+
+        return longest;
+    }
+
+    private static String findLongest(char[] chars, int left, int right) {
+        int pLeft = left - 1;
+        int pRight = right + 1;
+        if (pLeft >= 0 && pRight < chars.length && chars[pLeft] == chars[pRight]) {
+            return findLongest(chars, pLeft, pRight);
+        }
+        return String.valueOf(Arrays.copyOfRange(chars, left, pRight));
+    }
+
+
 }
