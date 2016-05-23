@@ -15,7 +15,3 @@ From the original source:
 * [Java 8](./java8)
 * [Scala](./scala)
 * [Haskell](./haskell)
-* Python
-* ECMAScript 6
-* Rust
-* Go
