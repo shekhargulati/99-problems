@@ -60,7 +60,7 @@ public void shouldFindSecondLastElementFromAList() throws Exception {
 The method should throw `NoSuchElementException` when list is either empty or has one element.
 
 ```java
-@Test(expected = IllegalArgumentException.class)
+@Test(expected = NoSuchElementException.class)
 public void shouldThrowExceptionWhenListEmpty() throws Exception {
     P02.secondLast(Collections.emptyList());
 }
