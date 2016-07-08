@@ -5,14 +5,14 @@ public class SelectionSort {
     public static int[] sort(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             int min = findMinIndex(arr, i);
-            swap(arr, arr[i], min);
+            swap(arr, i, min);
         }
         return arr;
     }
 
     private static void swap(int[] arr, int i, int min) {
-        int tmp = i;
-        i = arr[min];
+        int tmp = arr[i];
+        arr[i] = arr[min];
         arr[min] = tmp;
     }
 
