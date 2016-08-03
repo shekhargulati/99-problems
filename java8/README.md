@@ -1,16 +1,16 @@
-# Ninety-Nine Problems in Java 8
+# Java 8 的 99 个问题
 
-This is an adaptation of the [Ninety-Nine Prolog Problems](https://sites.google.com/site/prologsite/prolog-problems) written by Werner Hett at the Berne University of Applied Sciences in Berne, Switzerland.
+改编自瑞士伯尔尼大学应用科学系的 Werner Hett 所写的 [99 个 Prolog 问题](https://sites.google.com/site/prologsite/prolog-problems)。
 
-From the original source:
+来自原文：
 
-> The purpose of this problem collection is to give you the opportunity to practice your skills in logic programming. Your goal should be to find the most elegant solution of the given problems. Efficiency is important, but logical clarity is even more crucial. Some of the (easy) problems can be trivially solved using built-in predicates. However, in these cases, you learn more if you try to find your own solution.
+> 收集这些问题的目的是为了让你有练习你的逻辑编程技能的机会。你的目标应该是如何优雅地解决给出的问题。效率固然重要，但逻辑清晰才是关键点。一些（容易）问题可以使用内建关键词来解决。然而在这种情况下，如果你尝试得出自己的解决方式，你会收获更大。
 
-> The problems have different levels of difficulty. Those marked with a single asterisk (\*) are easy. If you have successfully solved the preceding problems you should be able to solve them within a few (say 15) minutes. Problems marked with two asterisks (\*\*) are of intermediate difficulty. If you are a skilled Java programmer it shouldn't take you more than 30-90 minutes to solve them. Problems marked with three asterisks (\*\*\*) are more difficult. You may need more time (i.e. a few hours or more) to find a good solution.
+> 这些问题有不同的难度级别。一星（\*）标记的是简单的问题。如果你已经成功地解决了上述问题，你应该能够数分钟（比如说 15 分钟）内解决这些问题。中等难度的问题用两颗星（\*\*）来标识。如果你是一名熟练的编程人员，那么解决它不会花费你超过 30 - 90 分钟的时间。三星（\*\*\*）表示困难级别。你可能需要时间（比如几个小时以上）来找到一个好的解决方案。
 
-I will use Java 8 features wherever it makes sense so that developers can learn how to use new features introduced in Java 8. If you are new to Java 8 then you can learn more about it by following my in-depth [Java 8 tutorial](https://github.com/shekhargulati/java8-the-missing-tutorial).
+我将使用 Java 8 中合适的功能，所以开发人员可以学习如何使用 Java 8 中的新功能。 如果你并不熟悉 Java 8，那么你可以通过我的 [Java 8 教程](https://github.com/shekhargulati/java8-the-missing-tutorial) 学到更多的东西。
 
-## Table of Contents
+## 目录
 
 * [Lists](#lists)
 * [Arithmetic](#arithmetic)
