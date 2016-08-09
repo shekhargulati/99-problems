@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 public class P23 {
 
     public static <T> List<T> randomSelect(List<T> list, int n) {
-        return new Random().ints(0, list.size()).limit(n).mapToObj(list::get).collect(Collectors.toList());
+        return new Random().ints(n, 0, list.size()).mapToObj(list::get).collect(Collectors.toList());
     }
 
     public static <T> List<T> randomSelectR(List<T> list, int n) {
