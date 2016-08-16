@@ -7,6 +7,6 @@ import com.shekhargulati.ninetynine_problems._01_lists.P10
   */
 object P33 {
 
-  def primeFactorsMult(number: Int): List[(Int, Int)] = P10.encode(P32.primeFactors(number)).map { case (t1, t2) => (t2, t1) }
+  def primeFactorsMult(number: Int): List[(Int, Int)] = P10.encode(P32.primeFactors(number)).map(_.swap)
 
 }

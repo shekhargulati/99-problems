@@ -16,7 +16,7 @@ object P16 {
     if (n == 0) {
       list
     } else {
-      list.zipWithIndex.withFilter(t => if ((t._2 + 1) % n == 0) false else true).map(_._1)
+      list.zipWithIndex.withFilter(t => (t._2 + 1) % n != 0).map(_._1)
     }
   }
 

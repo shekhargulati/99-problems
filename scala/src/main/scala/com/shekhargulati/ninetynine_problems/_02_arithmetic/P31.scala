@@ -10,7 +10,7 @@ object P31 {
     if (number < 2)
       false
     else
-      !((2 to Math.sqrt(number).toInt) exists (f => number % f == 0))
+      !((2 to Math.sqrt(number).toInt) exists (number % _ == 0))
 
 
   /**
