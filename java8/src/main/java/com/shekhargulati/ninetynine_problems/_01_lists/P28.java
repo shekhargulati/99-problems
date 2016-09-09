@@ -41,5 +41,10 @@ public class P28 {
                 .collect(toList());
     }
 
+    public List<List<T>> sortListOfListsOnLengthFrequency(List<List<T>> metaList){
+        Map<Integer, List<List<T>>> sizeFreqMap =  metaList.stream().collect(Collectors.groupingBy(List::size, Collectors.toList()));
+        return sizeFreqMap.entrySet().stream().sorted((e1, e2) -> e1.getValue().size()-e2.getValue().size()).map(e -> e.getValue()).flatMap(ml -> ml.stream()).collect(Collectors.toList());
+    }
+
 
 }
