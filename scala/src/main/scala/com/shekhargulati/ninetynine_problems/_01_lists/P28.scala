@@ -10,7 +10,7 @@ object P28 {
   The objective is to sort the elements of InList according to their length.
   E.g. short lists first, longer lists later, or vice versa
    */
-  def lsort[T](list: List[List[T]]): List[List[T]] = list.sortWith((l1, l2) => l1.length - l2.length < 0)
+  def lsort[T](list: List[List[T]]): List[List[T]] = list.sortBy(_.length)
 
   /*
   Again, we suppose that a list (InList) contains elements that are lists themselves.
@@ -19,8 +19,8 @@ object P28 {
    */
   def lfsort[T](list: List[List[T]]): List[List[T]] =
     lsort(list)
-      .groupBy(l => l.length).values.toList
-      .sortWith((l1, l2) => l1.length - l2.length < 0)
+      .groupBy(_.length).values.toList
+      .sortBy(_.length)
       .flatten
 
 }

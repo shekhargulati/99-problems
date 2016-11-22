@@ -1,5 +1,7 @@
 package com.shekhargulati.ninetynine_problems._01_lists
 
+import scala.annotation.tailrec
+
 /**
   * Find the number of elements of a list
   */
@@ -10,6 +12,7 @@ object P04 {
   def length1[T](list: List[T]): Int = list.map(_ => 1).sum
 
   def lengthRecursive[T](list: List[T]): Int = {
+    @tailrec
     def rec(list: List[T], length: Int): Int = list match {
       case x :: xs => rec(xs, length + 1)
       case Nil => length
