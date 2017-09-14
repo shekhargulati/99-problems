@@ -45,5 +45,13 @@ public class P05 {
         }
         return StreamSupport.stream(Spliterators.spliteratorUnknownSize(list.descendingIterator(), Spliterator.ORDERED), false).collect(toList());
     }
+    
+    public static <T> List<T> reverse(LinkedList<T> elements){
+        LinkedList<T> reversed = new LinkedList<T>();
+        for(T e: elements){
+            reversed.addFirst(e);
+        }
+        return reversed;
+    }
 }
 
