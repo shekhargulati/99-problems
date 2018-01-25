@@ -54,7 +54,7 @@ public class Problem01 {
         3. If second number is found then return index of first and second and second else move to the next number.
          */
         for (int i = 0; i < numbers.length; i++) {
-            int first = numbers[0];
+            int first = numbers[i];
             if (first < target) {
                 int second = target - first;
                 int secondElementIndex = Arrays.binarySearch(numbers, second);
