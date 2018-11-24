@@ -41,7 +41,7 @@ public class P50 {
      * @return true or false depending the tree is binary or not
      */
     public static boolean isTree(Node node){
-        if(node==null || (node.left==null && node.left==null)){
+        if(node==null || (node.left==null && node.left==null)){ 
             return true;
         }
         if(node.left!=null){
