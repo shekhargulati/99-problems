@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.shekhargulati.tadm.ch04.excercises.Problem4_2Test
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec

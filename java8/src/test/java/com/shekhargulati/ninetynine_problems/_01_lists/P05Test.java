@@ -9,7 +9,7 @@ import java.util.List;
 import static com.shekhargulati.ninetynine_problems._01_lists.CollectionUtils.arrayDeque;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class P05Test {
 
