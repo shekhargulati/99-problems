@@ -6,7 +6,7 @@ import static com.shekhargulati.ninetynine_problems._03_logic_and_codes.P46.and;
 import static com.shekhargulati.ninetynine_problems._03_logic_and_codes.P46.or;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 
 public class P46Test {

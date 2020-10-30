@@ -4,7 +4,7 @@ import com.shekhargulati.IntPair;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class Problem4_2Test {
 

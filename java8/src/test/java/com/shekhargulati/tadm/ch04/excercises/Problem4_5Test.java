@@ -3,7 +3,7 @@ package com.shekhargulati.tadm.ch04.excercises;
 import org.hamcrest.CoreMatchers;
 import org.junit.Test;
 
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class Problem4_5Test {
 

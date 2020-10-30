@@ -8,7 +8,7 @@ import static com.shekhargulati.ninetynine_problems._01_lists.CollectionUtils.li
 import static java.util.Arrays.asList;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class P01Test {
 
